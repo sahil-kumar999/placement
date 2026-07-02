@@ -1,0 +1,132 @@
+Here is your strict, focused **Day 1 task plan** for about 2.5 hours, aligned with C + Aptitude + Reasoning.  
+
+***
+
+## 1. C Programming (about 80 minutes)
+
+**Goal:** Get comfortable with basic C syntax, I/O, variables, and operators. [geeksforgeeks](https://www.geeksforgeeks.org/c/c-programming-language/)
+
+### Topics to study (in order)
+
+- C program structure:
+  - `#include <stdio.h>`  
+  - `int main()`  
+  - `return 0;`  
+- Basic input/output:
+  - `printf` and `scanf` for `int`, `float`, `char`. [w3schools](https://www.w3schools.com/c/c_intro.php)
+- Variables and data types:
+  - `int`, `float`, `double`, `char`. [programiz](https://www.programiz.com/c-programming)
+- Operators:
+  - Arithmetic: `+ - * / %`  
+  - Relational: `== != > < >= <=`  
+  - Logical: `&& || !`  
+  - Assignment and `++`/`--`. [geeksforgeeks](https://www.geeksforgeeks.org/c/c-programming-language/)
+
+### Time allocation
+
+- 15–20 min: Read a short intro + first “Hello World” program. [w3schools](https://www.w3schools.com/c/c_intro.php)
+- 25–30 min: Variables & data types with simple examples. [programiz](https://www.programiz.com/c-programming)
+- 25–30 min: Operators with practice programs. [geeksforgeeks](https://www.geeksforgeeks.org/c/c-programming-language/)
+
+### Coding exercises (do all)
+
+1. Program 1 – Profile  
+   - Print your name, age, college, and city using `printf`.  
+
+2. Program 2 – Basic arithmetic  
+   - Take two integers as input.  
+   - Print sum, difference, product, integer division result, and remainder.  
+
+3. Program 3 – Marks and average  
+   - Take marks of 3 subjects (ints).  
+   - Calculate total and average (float).  
+   - Print them with clear messages.  
+
+### Debugging challenges
+
+- Remove a semicolon intentionally and see the compiler error.  
+- Use wrong format specifier (`%d` with `float`) and observe what happens.  
+
+### C Homework (after main study)
+
+- Write 3 different programs describing:
+  - Your **student profile**.  
+  - Your favorite **cricketer’s stats** (runs, average, strike rate).  
+  - Your favorite **movie details** (year, rating, duration).  
+
+***
+
+## 2. Aptitude – Number System & Divisibility (about 40–45 minutes)
+
+**Goal:** Build base on number types and divisibility rules used in placement aptitude. [geeksforgeeks](https://www.geeksforgeeks.org/maths/divisibility-rules/)
+
+### Topics to study
+
+- Types of numbers:
+  - Natural, whole, integer, prime, composite. [geeksforgeeks](https://www.geeksforgeeks.org/maths/divisibility-rules/)
+- Divisibility rules for:
+  - 2, 3, 4, 5, 8, 9, 10, 11. [prepinsta](https://prepinsta.com/divisibility/divisibility-questions-and-answers/)
+
+### Time allocation
+
+- 15–20 min: Read rules and see worked examples. [prepinsta](https://prepinsta.com/divisibility/divisibility-questions-and-answers/)
+- 20–25 min: Solve questions.  
+
+### Practice questions (self-attempt)
+
+- For each number: 3456, 729, 1024, 1111, 980, 9729  
+  - Check divisibility by 2, 3, 4, 5, 8, 9, 10, 11. [geeksforgeeks](https://www.geeksforgeeks.org/maths/divisibility-rules/)
+- Find number of factors:
+  - 36, 48, 60.  
+- Find LCM and HCF:
+  - (12, 18), (15, 20), (21, 28).  
+
+### Aptitude Homework
+
+- Create 10 random numbers.  
+- For each:
+  - Mark prime/composite.  
+  - Write whether divisible by 2, 3, 5, 9.  
+
+***
+
+## 3. Logical Reasoning – Number & Letter Series (about 30–35 minutes)
+
+**Goal:** Start recognizing basic sequences used in placement reasoning sets. [placementpreparation](https://www.placementpreparation.io/logical-reasoning/number-series/questions-and-answers/)
+
+### Topics to study
+
+- Numeric series:
+  - Simple arithmetic series (constant addition/subtraction). [geeksforgeeks](https://www.geeksforgeeks.org/aptitude/number-series-solved-questions-and-answers/)
+  - Simple geometric series (constant multiplication/division). [geeksforgeeks](https://www.geeksforgeeks.org/aptitude/number-series-solved-questions-and-answers/)
+- Alphabet series:
+  - Patterns with letter jumps (e.g., +2 positions each step). [placementpreparation](https://www.placementpreparation.io/logical-reasoning/number-series/questions-and-answers/)
+
+### Time allocation
+
+- 10–15 min: Read common patterns and a few solved examples. [placementpreparation](https://www.placementpreparation.io/logical-reasoning/number-series/questions-and-answers/)
+- 20 min: Practice questions.  
+
+### Practice questions (example set)
+
+1. Find next two terms:  
+   - 2, 4, 6, 8, ?  
+   - 3, 9, 27, ?  
+   - 5, 10, 20, 40, ?  
+
+2. Alphabet series:  
+   - A, C, E, G, ?  
+   - B, D, G, K, ?  
+
+3. Pattern recognition:  
+   - 1, 4, 9, 16, ?  
+
+### Reasoning Homework
+
+- Create 5 of your own series:
+  - At least 3 numeric and 2 alphabet series.  
+- Write the rule and next 3 terms for each.  
+
+***
+
+
