@@ -1,0 +1,178 @@
+Nice work getting Day 1 done and saving it as `day01.c`. I’ll first update your progress, then adjust your plan and give you **Day 2 tasks**.  
+
+***
+
+## 1. What You Completed (from `day01.c`)
+
+From your file, you have: [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/81789339/2844a051-daf5-481b-b085-5e3cc1469181/day01.c?AWSAccessKeyId=ASIA2F3EMEYEQR5SMA5K&Signature=FFnhDgkcq6Wyk9%2BOI2xFgAxks80%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEFsaCXVzLWVhc3QtMSJIMEYCIQCidFSNetvkTzqhYVjneQu7ArgcQyciS6A1i7g4umUmTgIhAJvTcXEqxrdmSCaPh14NVkRNU05yXy%2BIxCnrFRkF9QRtKvMECCMQARoMNjk5NzUzMzA5NzA1Igy0rVisWRq%2BVtYNvwYq0AQ5pkke1lQ9KbqZDJuwfAFq1af0LBFBdRmdX5vmIL1wtyMbf0wlnUbnpQHkE4Uor2F0fcoMHDyBeIuSIHw0zrEFUb0SjQnWr9qEyRkt9qgxX7oQrEh5T78Nec2z41EWP8l%2B4OWqlnd%2Fe3FTuKeoCj9%2BDbjfTeaNDclavjhapSemrpBehR9AjrHfiXxbBmF1SC33FqCsCfIFNvsmK3CnaqJgPXqHTnsN04%2FjX9LDiYeh8sowLbzpkZ4P9sQhnbjWSGbzzYljt1j6BRnrAQdLK3VZQpPmVke0YlWq5ui6mYGhT3xDMBIk97FHJXWryUFnb1tiZH1Nsox5Jp3TIfWaHVuw49VZ%2BbHMc7T1HteWrUJp2yMscB1vXdlAUOqNUjfNzJbriFIVPUuz93t%2B7IxZfcybvEc3%2FJZxBXrh379tjFJ0YUEaql11m41qn5V1b%2B5nzoNbTGiHt8bvSAIBZpNYAmUzkjAIEY9T%2BD7IyCEjmJrK36HtMCcmdRRd9P%2FrFDqhq7qFrdwD2Q2m6%2FnE%2FbZPQbbSS%2FJVGc%2FuQAYZBHnHSXyOUno7fX6fpDaUoldTsbwxn%2BTB7FatkS3Hvx4K33OwN%2F5LyW0y7cfbLObAGuW0ZNSLXB%2FDIp48R0HbgoLKwuV0iArRce7Njfr1l3HPCfqPK6JG5mFflUqu4ND0pxmWBlNKkl6WQdqSUb5MNcfQShQFsKawtI7eNVI8mAULppaxns1N%2BEscRntzsApgU8RmJPiFC%2FmQDN33OQJxxt7LBPZ6G7ImQi%2BRStoJGI5K2eJ3SawAMMC7o9IGOpcBYndfjniMvs%2FuFHTcrnn2zVejlIETT%2FuwDGldMzBfHPcrRYPxVAvYRu1KskJRdw5MXWQbpRChLPnjcE2yUtkihjrd2IxTdWrMN0nl9%2FOELmMLw3TGcuxM%2BXLikDFjuPxPELy964r3nouSQQhGkMFP09rgzUhv6MsLdIRfEtmp58FdxYN5cWVI1%2FqeseE5PbrlQYClG4iiEg%3D%3D&Expires=1783163795)
+
+- C Programming:
+  - Profile print program (name, age, college, city) using `printf`.  
+  - Arithmetic operations with constants `a` and `b` (sum, subtraction, multiplication, division, remainder) – currently commented.  
+  - Interactive sum program: takes two integers from the user and prints their sum.  
+  - Marks program: takes math, science, English marks, computes total and average (integer division).  
+  - Started sketches for:
+    - Favorite cricketer stats (Virat Kohli) – using variables and per-match calculations.  
+    - Favorite movie details (The Dark Knight) – using strings and basic fields.  
+
+- Aptitude:
+  - Divisibility reasoning for 3456, 729, 1024, 1111, 980, 9729 (though 1024 divisibility note is partly incorrect; we’ll fix). [geeksforgeeks](https://www.geeksforgeeks.org/maths/divisibility-rules/)
+  - Factors count for 36, 48, 60 (answers look fine). [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/81789339/2844a051-daf5-481b-b085-5e3cc1469181/day01.c?AWSAccessKeyId=ASIA2F3EMEYEQR5SMA5K&Signature=FFnhDgkcq6Wyk9%2BOI2xFgAxks80%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEFsaCXVzLWVhc3QtMSJIMEYCIQCidFSNetvkTzqhYVjneQu7ArgcQyciS6A1i7g4umUmTgIhAJvTcXEqxrdmSCaPh14NVkRNU05yXy%2BIxCnrFRkF9QRtKvMECCMQARoMNjk5NzUzMzA5NzA1Igy0rVisWRq%2BVtYNvwYq0AQ5pkke1lQ9KbqZDJuwfAFq1af0LBFBdRmdX5vmIL1wtyMbf0wlnUbnpQHkE4Uor2F0fcoMHDyBeIuSIHw0zrEFUb0SjQnWr9qEyRkt9qgxX7oQrEh5T78Nec2z41EWP8l%2B4OWqlnd%2Fe3FTuKeoCj9%2BDbjfTeaNDclavjhapSemrpBehR9AjrHfiXxbBmF1SC33FqCsCfIFNvsmK3CnaqJgPXqHTnsN04%2FjX9LDiYeh8sowLbzpkZ4P9sQhnbjWSGbzzYljt1j6BRnrAQdLK3VZQpPmVke0YlWq5ui6mYGhT3xDMBIk97FHJXWryUFnb1tiZH1Nsox5Jp3TIfWaHVuw49VZ%2BbHMc7T1HteWrUJp2yMscB1vXdlAUOqNUjfNzJbriFIVPUuz93t%2B7IxZfcybvEc3%2FJZxBXrh379tjFJ0YUEaql11m41qn5V1b%2B5nzoNbTGiHt8bvSAIBZpNYAmUzkjAIEY9T%2BD7IyCEjmJrK36HtMCcmdRRd9P%2FrFDqhq7qFrdwD2Q2m6%2FnE%2FbZPQbbSS%2FJVGc%2FuQAYZBHnHSXyOUno7fX6fpDaUoldTsbwxn%2BTB7FatkS3Hvx4K33OwN%2F5LyW0y7cfbLObAGuW0ZNSLXB%2FDIp48R0HbgoLKwuV0iArRce7Njfr1l3HPCfqPK6JG5mFflUqu4ND0pxmWBlNKkl6WQdqSUb5MNcfQShQFsKawtI7eNVI8mAULppaxns1N%2BEscRntzsApgU8RmJPiFC%2FmQDN33OQJxxt7LBPZ6G7ImQi%2BRStoJGI5K2eJ3SawAMMC7o9IGOpcBYndfjniMvs%2FuFHTcrnn2zVejlIETT%2FuwDGldMzBfHPcrRYPxVAvYRu1KskJRdw5MXWQbpRChLPnjcE2yUtkihjrd2IxTdWrMN0nl9%2FOELmMLw3TGcuxM%2BXLikDFjuPxPELy964r3nouSQQhGkMFP09rgzUhv6MsLdIRfEtmp58FdxYN5cWVI1%2FqeseE5PbrlQYClG4iiEg%3D%3D&Expires=1783163795)
+  - LCM and HCF for (12, 18), (15, 20), (21, 28). [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/81789339/2844a051-daf5-481b-b085-5e3cc1469181/day01.c?AWSAccessKeyId=ASIA2F3EMEYEQR5SMA5K&Signature=FFnhDgkcq6Wyk9%2BOI2xFgAxks80%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEFsaCXVzLWVhc3QtMSJIMEYCIQCidFSNetvkTzqhYVjneQu7ArgcQyciS6A1i7g4umUmTgIhAJvTcXEqxrdmSCaPh14NVkRNU05yXy%2BIxCnrFRkF9QRtKvMECCMQARoMNjk5NzUzMzA5NzA1Igy0rVisWRq%2BVtYNvwYq0AQ5pkke1lQ9KbqZDJuwfAFq1af0LBFBdRmdX5vmIL1wtyMbf0wlnUbnpQHkE4Uor2F0fcoMHDyBeIuSIHw0zrEFUb0SjQnWr9qEyRkt9qgxX7oQrEh5T78Nec2z41EWP8l%2B4OWqlnd%2Fe3FTuKeoCj9%2BDbjfTeaNDclavjhapSemrpBehR9AjrHfiXxbBmF1SC33FqCsCfIFNvsmK3CnaqJgPXqHTnsN04%2FjX9LDiYeh8sowLbzpkZ4P9sQhnbjWSGbzzYljt1j6BRnrAQdLK3VZQpPmVke0YlWq5ui6mYGhT3xDMBIk97FHJXWryUFnb1tiZH1Nsox5Jp3TIfWaHVuw49VZ%2BbHMc7T1HteWrUJp2yMscB1vXdlAUOqNUjfNzJbriFIVPUuz93t%2B7IxZfcybvEc3%2FJZxBXrh379tjFJ0YUEaql11m41qn5V1b%2B5nzoNbTGiHt8bvSAIBZpNYAmUzkjAIEY9T%2BD7IyCEjmJrK36HtMCcmdRRd9P%2FrFDqhq7qFrdwD2Q2m6%2FnE%2FbZPQbbSS%2FJVGc%2FuQAYZBHnHSXyOUno7fX6fpDaUoldTsbwxn%2BTB7FatkS3Hvx4K33OwN%2F5LyW0y7cfbLObAGuW0ZNSLXB%2FDIp48R0HbgoLKwuV0iArRce7Njfr1l3HPCfqPK6JG5mFflUqu4ND0pxmWBlNKkl6WQdqSUb5MNcfQShQFsKawtI7eNVI8mAULppaxns1N%2BEscRntzsApgU8RmJPiFC%2FmQDN33OQJxxt7LBPZ6G7ImQi%2BRStoJGI5K2eJ3SawAMMC7o9IGOpcBYndfjniMvs%2FuFHTcrnn2zVejlIETT%2FuwDGldMzBfHPcrRYPxVAvYRu1KskJRdw5MXWQbpRChLPnjcE2yUtkihjrd2IxTdWrMN0nl9%2FOELmMLw3TGcuxM%2BXLikDFjuPxPELy964r3nouSQQhGkMFP09rgzUhv6MsLdIRfEtmp58FdxYN5cWVI1%2FqeseE5PbrlQYClG4iiEg%3D%3D&Expires=1783163795)
+
+- Logical reasoning:
+  - Number series: wrote next terms for given sequences. [geeksforgeeks](https://www.geeksforgeeks.org/aptitude/number-series-solved-questions-and-answers/)
+  - Alphabet series: gave next terms for A,C,E,G… and B,D,G,K… . [placementpreparation](https://www.placementpreparation.io/logical-reasoning/number-series/questions-and-answers/)
+  - Pattern recognition for 1,4,9,16… (perfect squares). [geeksforgeeks](https://www.geeksforgeeks.org/aptitude/number-series-solved-questions-and-answers/)
+
+This is a strong start for Day 1, especially on C basics and reasoning patterns.  
+
+***
+
+## 2. Quick Corrections & Feedback
+
+To keep fundamentals very clear:  
+
+- C strings:  
+  - `char virat = "virat kohli";` is invalid; you need a **char array**:  
+    - `char virat[] = "virat kohli";`  
+  - Same for movie details fields – they should be `char[]`, not `int`. [programiz](https://www.programiz.com/c-programming)
+
+- Aptitude – divisibility (example):  
+  - 1024 is divisible by 2, 4, 8, and 16, but **not by 3**, because sum of digits \(1+0+2+4=7\) (not divisible by 3). [prepinsta](https://prepinsta.com/divisibility/divisibility-questions-and-answers/)
+
+We’ll fix these in Day 2 with focused exercises on strings and a quick divisibility revision.  
+
+***
+
+## 3. Readiness & Progress (Early Stage)
+
+Based on just Day 1:
+
+- C basics (I/O, variables, simple arithmetic): **on track**.  
+- Aptitude number system: **started**, needs more structured Q&A sets. [geeksforgeeks](https://www.geeksforgeeks.org/maths/divisibility-rules/)
+- Reasoning series: **good initial feel**, we’ll increase difficulty gradually. [placementpreparation](https://www.placementpreparation.io/logical-reasoning/number-series/questions-and-answers/)
+
+I’ll tentatively put your **readiness** around **15/100** right now (very early stage, but good momentum).  
+
+***
+
+## 4. Day 2 Tasks (Total ~2.5 hours)
+
+### Block 1: C – Control Flow & Fixing Strings (80–90 minutes)
+
+**Goals:**  
+- Learn `if/else`, `switch`, loops.  
+- Correct your string usage in cricketer and movie programs. [geeksforgeeks](https://www.geeksforgeeks.org/c/c-programming-language/)
+
+**Topics to study (in order):**  
+- `if`, `else if`, `else` – basic conditions.  
+- `switch` with `case` and `default`.  
+- Loops:
+  - `for` loop basics.  
+  - `while` and `do-while` (just small examples today).  
+- Strings in C:
+  - Declaring char arrays: `char name[] = "Sahil";`  
+  - Printing strings with `%s`. [programiz](https://www.programiz.com/c-programming)
+
+**Exercises (do all):**
+
+1. Conditional grading program  
+   - Input total marks (0–100).  
+   - Print grade:
+     - `>= 90` → “Grade A”  
+     - `>= 75` → “Grade B”  
+     - `>= 60` → “Grade C”  
+     - else → “Grade D”  
+
+2. Menu-based calculator (using `switch`)  
+   - Input two integers.  
+   - Show menu:  
+     - 1 – Add  
+     - 2 – Subtract  
+     - 3 – Multiply  
+     - 4 – Divide  
+   - Use `switch` to perform chosen operation and print result.  
+
+3. Loop practice  
+   - Program 1: Print numbers from 1 to 10 using `for`.  
+   - Program 2: Sum of numbers from 1 to `n` (user input) using `while`.  
+
+4. Fix and run your cricketer stats program  
+   - Replace `char virat = "virat kohli";` with `char virat[] = "Virat Kohli";`.  
+   - Print name + all stats + calculated per-match values.  
+
+5. Fix and run your movie details program  
+   - Use `char movie[] = "The Dark Knight";` and similar for genre, director, etc.  
+   - Print all details using `%s` for strings and `%d` for numeric fields.  
+
+**Homework (C):**  
+- Modify marks program to:
+  - Use **float average**.  
+  - Also print “Pass/Fail” based on average (e.g., pass if average >= 33).  
+
+***
+
+### Block 2: Aptitude – Divisibility & Factors (40–45 minutes)
+
+**Goal:** Correct and strengthen divisibility understanding and factor counting. [prepinsta](https://prepinsta.com/divisibility/divisibility-questions-and-answers/)
+
+**Study:**  
+- Revisit divisibility rules of 2, 3, 4, 5, 8, 9, 10, 11 with formal definitions. [geeksforgeeks](https://www.geeksforgeeks.org/maths/divisibility-rules/)
+- Learn prime factorization method to count factors. [geeksforgeeks](https://www.geeksforgeeks.org/maths/divisibility-rules/)
+
+**Practice (new set):**
+
+1. Divisibility check (write answers clearly):  
+   - 1248, 975, 5600, 1331, 9999  
+   - For each, specify divisibility by 2, 3, 4, 5, 8, 9, 10, 11.  
+
+2. Factors and prime factorization:  
+   - Write prime factorization and number of factors for:
+     - 24, 32, 45.  
+
+3. Quick correction:  
+   - Recheck 1024 and write a corrected divisibility summary using rules.  
+
+**Homework (Aptitude):**  
+- Create 5 numbers where:
+  - 3 of them are divisible by 3 but not by 2.  
+  - 2 of them divisible by both 4 and 5.  
+
+***
+
+### Block 3: Reasoning – More Series & Patterns (30–35 minutes)
+
+**Goal:** Move slightly beyond simple series and check your Day 1 answers carefully. [geeksforgeeks](https://www.geeksforgeeks.org/aptitude/number-series-solved-questions-and-answers/)
+
+**Study:**  
+- Different series categories:
+  - Arithmetic (constant difference). [geeksforgeeks](https://www.geeksforgeeks.org/aptitude/number-series-solved-questions-and-answers/)
+  - Geometric (constant ratio). [geeksforgeeks](https://www.geeksforgeeks.org/aptitude/number-series-solved-questions-and-answers/)
+  - Square and cube series. [geeksforgeeks](https://www.geeksforgeeks.org/aptitude/number-series-solved-questions-and-answers/)
+  - Mixed patterns. [placementpreparation](https://www.placementpreparation.io/logical-reasoning/number-series/questions-and-answers/)
+
+**Practice:**
+
+1. Check your Day 1 answers  
+   - Rewrite each series as:
+     - Rule in words.  
+     - Next two correct terms.  
+   - For example, `2, 4, 6, 8` → “Add 2 each time; next terms 10, 12.”  
+
+2. New series (self-solve, then we’ll review):  
+   - 10, 20, 40, 80, ?  
+   - 1, 8, 27, 64, ?  
+   - 2, 5, 10, 17, 26, ?  
+
+3. Alphabet series:  
+   - D, G, J, M, ?  
+   - X, U, R, O, ?  
+
+**Homework (Reasoning):**  
+- Construct 3 mixed series:
+  - At least one numeric series that uses squares or cubes.  
+  - One alphabet series with backward jumps.  
+
+***
+
