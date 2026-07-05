@@ -1,0 +1,299 @@
+Excellent work completing **Day 2**. Since your C fundamentals are improving, we'll increase the difficulty slightly while reinforcing the basics. Total study time remains **2.5–3 hours**.
+
+---
+
+# 📅 Day 3 Tasks (Total: ~2.5–3 Hours)
+
+## 🟦 Block 1: C Programming (90 Minutes)
+
+### 🎯 Goal
+
+Master nested conditions, `do-while` loops, and pattern printing.
+
+### 📖 Study (25 Minutes)
+
+Learn the following concepts in order:
+
+1. Nested `if-else`
+2. `do-while` loop
+3. Difference between:
+
+   * `for`
+   * `while`
+   * `do-while`
+4. Nested loops
+5. Pattern printing basics
+
+---
+
+## 💻 Coding Exercises (Complete All)
+
+### Program 1 — Largest of Three Numbers
+
+* Input three integers.
+* Use **nested `if-else` only**.
+* Print the largest number.
+
+---
+
+### Program 2 — Positive, Negative, or Zero
+
+* Input a number.
+* Print:
+
+  * Positive
+  * Negative
+  * Zero
+
+---
+
+### Program 3 — Even Numbers (do-while)
+
+Print all even numbers from **2 to 20** using a `do-while` loop.
+
+---
+
+### Program 4 — Sum of Even Numbers
+
+* Input `n`
+* Print the sum of all even numbers from `1` to `n`.
+
+Example:
+
+```
+Input: 10
+Output: 30
+```
+
+---
+
+### Program 5 — Multiplication Table
+
+Print the multiplication table of any number from **1 to 10**.
+
+Example:
+
+```
+Enter: 7
+
+7 x 1 = 7
+7 x 2 = 14
+...
+7 x 10 = 70
+```
+
+---
+
+### Program 6 — Star Pattern
+
+Print:
+
+```
+*
+**
+***
+****
+*****
+```
+
+---
+
+### 🌟 Challenge Program
+
+Print:
+
+```
+1
+12
+123
+1234
+12345
+```
+
+---
+
+## 🐞 Debugging Challenge
+
+Find and fix the errors in this code:
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int i = 1;
+
+    while(i <= 5)
+    {
+        printf("%d ", i);
+    }
+
+    return 0;
+}
+```
+
+Questions:
+
+1. Why does it never stop?
+2. Fix the program.
+
+---
+
+# 🟩 Block 2: Aptitude (45 Minutes)
+
+## 🎯 Topic: Percentages
+
+### Study (15 Minutes)
+
+Understand:
+
+* Percentage formula
+* Convert:
+
+  * Fraction → Percentage
+  * Percentage → Decimal
+* Increase and decrease percentages
+
+---
+
+## Practice Questions
+
+### Basic
+
+1. 25% of 400
+2. 40% of 250
+3. 15% of 600
+4. 12.5% of 240
+5. 5% of 860
+
+---
+
+### Intermediate
+
+6. A shirt costs ₹1200 and gets a **20% discount**.
+
+   * Find the selling price.
+
+7. Salary increases from ₹40,000 to ₹46,000.
+
+   * Percentage increase?
+
+8. Population decreases from 50,000 to 45,000.
+
+   * Percentage decrease?
+
+---
+
+### Homework
+
+Solve:
+
+1. 35% of 480
+2. 18% of 950
+3. A TV worth ₹30,000 gets a **15% discount**.
+4. Marks:
+
+   * 425 out of 500
+   * Find percentage.
+
+---
+
+# 🟨 Block 3: Logical Reasoning (35 Minutes)
+
+## 🎯 Topic: Coding-Decoding (Letter Shift)
+
+### Study
+
+Learn:
+
+* Forward shifts
+* Backward shifts
+* Reverse alphabet
+* Position values (A = 1, B = 2, ..., Z = 26)
+
+---
+
+## Practice
+
+### Part A
+
+If every letter moves **+1**:
+
+```
+CAT → ?
+DOG → ?
+JAVA → ?
+```
+
+---
+
+### Part B
+
+If every letter moves **+2**:
+
+```
+CODE → ?
+HELLO → ?
+```
+
+---
+
+### Part C
+
+If every letter moves **−1**:
+
+```
+BCD → ?
+XYZ → ?
+```
+
+---
+
+### Position Questions
+
+1. Position of **M**
+2. Position of **T**
+3. 18th letter
+4. 25th letter
+
+---
+
+### Homework
+
+Create your own:
+
+* 5 coding-decoding questions
+* Write both the encoding rule and the answer
+
+---
+
+# 🔁 Revision (15 Minutes)
+
+Without looking at notes, explain:
+
+* Difference between `if` and nested `if`
+* Difference between `while` and `do-while`
+* When to use a `switch`
+* What is a percentage?
+* How do you find percentage increase?
+
+---
+
+# 📁 Save Your Programs
+
+Create a new folder:
+
+```text
+STEP_Preparation/
+└── Day03/
+    ├── largest_of_three.c
+    ├── positive_negative.c
+    ├── even_do_while.c
+    ├── sum_even.c
+    ├── table.c
+    ├── star_pattern.c
+    └── number_pattern.c
+```
+
+---
+
