@@ -1,0 +1,239 @@
+Great! Assuming you complete **Day 3**, here is your **Day 4** plan. Today we'll move into one of the most important C topics: **Functions**. Mastering functions will make later topics like arrays, pointers, and projects much easier.
+
+# STEP Preparation – Day 4
+
+**Total Time:** 2.5–3 Hours
+
+---
+
+# Session 1 – C Programming (95 Minutes)
+
+## Topic
+
+### Functions in C
+
+### Learn (25 Minutes)
+
+Study these concepts:
+
+* What is a function?
+* Advantages of functions
+* Function declaration (prototype)
+* Function definition
+* Function call
+* Parameters vs Arguments
+* Return type (`void` vs `int`)
+
+Example:
+
+```c
+#include<stdio.h>
+
+int add(int a, int b);
+
+int main()
+{
+    int result = add(10, 20);
+    printf("Sum = %d", result);
+    return 0;
+}
+
+int add(int a, int b)
+{
+    return a + b;
+}
+```
+
+---
+
+## Coding Exercises (50 Minutes)
+
+### Easy
+
+1. Function to print "Welcome to C Programming".
+2. Function to calculate the square of a number.
+3. Function to calculate the cube of a number.
+
+### Medium
+
+4. Function to check whether a number is even or odd.
+5. Function to find the maximum of two numbers.
+6. Function to find the minimum of three numbers.
+
+### Challenge
+
+7. Function to check whether a year is a leap year.
+8. Function to calculate the factorial of a number (using a loop).
+
+---
+
+## Debugging Challenge (20 Minutes)
+
+Find and fix the errors:
+
+```c
+#include<stdio.h>
+
+void square(int n)
+{
+    return n*n;
+}
+
+int main()
+{
+    int ans = square(5);
+    printf("%d", ans);
+    return 0;
+}
+```
+
+Answer:
+
+* Why is this incorrect?
+* Rewrite it correctly.
+
+---
+
+# Session 2 – Aptitude (40 Minutes)
+
+## Topic
+
+### Ratio and Proportion
+
+### Learn (15 Minutes)
+
+* Meaning of ratio
+* Simplifying ratios
+* Proportion
+* Dividing quantities in a given ratio
+
+### Practice (25 Minutes)
+
+1. Simplify: 24 : 36
+2. Divide ₹900 in the ratio 2 : 3.
+3. The ratio of boys to girls is 5 : 4. If there are 45 boys, how many girls are there?
+4. If A : B = 3 : 5 and B = 40, find A.
+5. Find the fourth proportional to 4, 8, and 20.
+
+---
+
+# Session 3 – Logical Reasoning (30 Minutes)
+
+## Topic
+
+### Alphabet Series
+
+Find the next letter(s):
+
+1.
+
+```text
+A C E G ?
+```
+
+2.
+
+```text
+Z X V T ?
+```
+
+3.
+
+```text
+B E H K ?
+```
+
+4.
+
+```text
+A D G J ?
+```
+
+5.
+
+```text
+C F J O ?
+```
+
+### Mixed Number Series
+
+Find the next number:
+
+1.
+
+```text
+3 6 12 24 48 ?
+```
+
+2.
+
+```text
+2 6 12 20 30 ?
+```
+
+3.
+
+```text
+5 9 17 33 65 ?
+```
+
+---
+
+# Revision (15 Minutes)
+
+Without looking at notes, explain:
+
+* Function declaration
+* Function definition
+* Function call
+* Parameters
+* Arguments
+* Return value
+* `void` function vs `int` function
+
+---
+
+# Homework
+
+## C Programming
+
+Create a **Calculator using Functions**.
+
+The menu should have:
+
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+
+Each operation must be implemented in a separate function.
+
+---
+
+## Mini Challenge
+
+Create a **Student Result System** using functions.
+
+Features:
+
+* Input marks of 5 subjects.
+* Calculate total.
+* Calculate percentage.
+* Display grade.
+* Display Pass/Fail.
+
+---
+
+## Aptitude
+
+Solve **10 ratio and proportion** questions.
+
+---
+
+## Reasoning
+
+Create **5 alphabet series** of your own and solve them.
+
+---
+
