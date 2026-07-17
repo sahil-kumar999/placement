@@ -1,0 +1,265 @@
+Excellent! If you've completed **Day 4**, you're making steady progress. **Day 5** introduces **Arrays**, one of the most important topics in C and a foundation for data structures and coding interviews.
+
+# STEP Preparation – Day 5
+
+**Total Study Time:** 2.5–3 Hours
+
+---
+
+# Session 1 – C Programming (100 Minutes)
+
+## Topic
+
+### One-Dimensional Arrays
+
+### Learn (30 Minutes)
+
+Study these concepts:
+
+* What is an array?
+* Why use arrays?
+* Declaring an array
+* Initializing an array
+* Accessing array elements
+* Taking array input using a loop
+* Printing array elements
+* Array indexing (starts from 0)
+
+Example:
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    int marks[5];
+    int i;
+
+    printf("Enter 5 marks:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &marks[i]);
+    }
+
+    printf("Marks are:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        printf("%d ", marks[i]);
+    }
+
+    return 0;
+}
+```
+
+---
+
+## Coding Exercises (50 Minutes)
+
+### Easy
+
+1. Store and print 5 numbers.
+2. Find the sum of all elements.
+3. Find the average of array elements.
+
+### Medium
+
+4. Find the largest element.
+5. Find the smallest element.
+6. Count even and odd numbers.
+
+### Challenge
+
+7. Reverse an array.
+8. Search for a number in an array (Linear Search).
+9. Count how many times a number appears in the array.
+
+---
+
+## Debugging Challenge (20 Minutes)
+
+Find and fix the errors:
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    int a[5];
+    int i;
+
+    for(i = 1; i <= 5; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    for(i = 1; i <= 5; i++)
+    {
+        printf("%d ", a[i]);
+    }
+
+    return 0;
+}
+```
+
+### Answer these:
+
+* What is the indexing mistake?
+* Why can this cause undefined behavior?
+* Rewrite the program correctly.
+
+---
+
+# Session 2 – Aptitude (40 Minutes)
+
+## Topic
+
+### Average
+
+### Learn (15 Minutes)
+
+Formula:
+
+**Average = Sum of all values ÷ Number of values**
+
+Understand:
+
+* Finding missing values
+* New average after adding/removing a value
+
+### Practice (25 Minutes)
+
+1. Find the average of: 12, 18, 25, 15, 30.
+2. The average of 8 numbers is 45. Find their total.
+3. The average of 6 numbers is 32. One number is removed, and the new average becomes 30. Find the removed number.
+4. The average of five numbers is 40. A sixth number 70 is added. Find the new average.
+5. Find the average of the first 20 natural numbers.
+
+---
+
+# Session 3 – Logical Reasoning (30 Minutes)
+
+## Topic
+
+### Number Analogy & Letter Analogy
+
+### Practice
+
+### Number Analogy
+
+1.
+
+```text
+8 : 64 :: 9 : ?
+```
+
+2.
+
+```text
+7 : 49 :: 11 : ?
+```
+
+3.
+
+```text
+15 : 225 :: 13 : ?
+```
+
+### Letter Analogy
+
+4.
+
+```text
+A : C :: D : ?
+```
+
+5.
+
+```text
+B : E :: F : ?
+```
+
+6.
+
+```text
+M : O :: P : ?
+```
+
+### Number Series
+
+Find the next number:
+
+1.
+
+```text
+1 3 6 10 15 ?
+```
+
+2.
+
+```text
+10 20 40 80 ?
+```
+
+3.
+
+```text
+100 90 81 73 ?
+```
+
+---
+
+# Revision (15 Minutes)
+
+Without looking at notes, explain:
+
+* What is an array?
+* Why do array indexes start at 0?
+* Difference between a variable and an array.
+* How linear search works.
+* Time complexity of linear search (basic idea).
+
+---
+
+# Homework
+
+## C Programming
+
+### Mini Project: Student Marks Analyzer
+
+Requirements:
+
+* Input marks of 10 students.
+* Display all marks.
+* Find:
+
+  * Highest mark
+  * Lowest mark
+  * Average
+  * Number of passed students (marks ≥ 33)
+  * Number of failed students
+
+---
+
+### Challenge
+
+Write a program to:
+
+* Reverse an array.
+* Print the array in ascending order **without using library functions**.
+
+---
+
+## Aptitude
+
+Solve **10 average** questions.
+
+---
+
+## Reasoning
+
+Create **5 analogy questions** of your own and solve them.
+
+---
+
