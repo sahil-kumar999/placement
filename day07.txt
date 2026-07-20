@@ -1,0 +1,281 @@
+Excellent work! Completing **7 consecutive study days** is a strong start. Today you'll learn **2D Arrays (Matrices)**, which are frequently asked in college practicals and coding interviews. We'll also introduce **Time & Work** in aptitude and finish the week with a comprehensive revision.
+
+# STEP Preparation – Day 7
+
+**Total Study Time:** 2.5–3 Hours
+
+---
+
+# Session 1 – C Programming (100 Minutes)
+
+## Topic
+
+### Two-Dimensional (2D) Arrays
+
+### Learn (30 Minutes)
+
+Study these concepts:
+
+* What is a 2D array?
+* Declaration and initialization
+* Row and column indexing
+* Taking input using nested loops
+* Displaying a matrix
+* Matrix addition
+* Matrix transpose (basic idea)
+
+Example:
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    int a[2][3];
+    int i, j;
+
+    printf("Enter 6 elements:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    printf("Matrix:\n");
+
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            printf("%d ", a[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+
+---
+
+## Coding Exercises (50 Minutes)
+
+### Easy
+
+1. Read and print a **3×3 matrix**.
+2. Find the sum of all matrix elements.
+3. Find the sum of each row.
+
+### Medium
+
+4. Find the sum of each column.
+5. Find the largest element in a matrix.
+6. Find the smallest element in a matrix.
+
+### Challenge
+
+7. Add two **3×3 matrices**.
+8. Find the transpose of a **3×3 matrix**.
+
+---
+
+## Debugging Challenge (20 Minutes)
+
+Find and fix the errors:
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    int a[3][3];
+    int i, j;
+
+    for(i = 0; i <= 3; i++)
+    {
+        for(j = 0; j <= 3; j++)
+        {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    return 0;
+}
+```
+
+### Questions
+
+* Why does this access memory outside the array?
+* What should the loop conditions be?
+* Rewrite the corrected program.
+
+---
+
+# Session 2 – Aptitude (40 Minutes)
+
+## Topic
+
+### Time & Work
+
+### Learn (15 Minutes)
+
+Important formulas:
+
+```text
+If A completes a work in N days,
+
+One day's work = 1/N
+
+Combined work:
+
+(1/A) + (1/B)
+```
+
+Study:
+
+* Individual work
+* Combined work
+* Efficiency
+
+### Practice (25 Minutes)
+
+1. A completes a job in **12 days**. How much work does A complete in one day?
+2. B completes a job in **15 days**. What is B's one-day work?
+3. A takes **10 days**, B takes **15 days**. In how many days will they complete the work together?
+4. A and B together complete a task in **6 days**. If A alone takes **10 days**, how long will B take?
+5. A can complete a job in **20 days**. After working for **5 days**, what fraction of the work remains?
+
+---
+
+# Session 3 – Logical Reasoning (30 Minutes)
+
+## Topic
+
+### Blood Relations (Basics)
+
+Learn:
+
+* Father
+* Mother
+* Brother
+* Sister
+* Grandfather
+* Grandmother
+* Uncle
+* Aunt
+* Cousin
+
+### Practice
+
+1. Rahul is the son of Mohan. Mohan is the brother of Rina. How is Rina related to Rahul?
+2. A woman says, "He is the son of my father's only son." Who is he?
+3. P is the mother of Q. Q is the father of R. How is P related to R?
+4. If A is B's sister and B is C's father, how is A related to C?
+5. Ramesh is the brother of Suresh. Suresh is the father of Amit. How is Ramesh related to Amit?
+
+---
+
+# Weekly Revision (20 Minutes)
+
+Revise all topics covered this week:
+
+### C Programming
+
+* Variables
+* Data Types
+* Operators
+* Input/Output
+* if-else
+* switch
+* Loops
+* Functions
+* Arrays
+* Sorting
+* Searching
+* 2D Arrays
+
+### Aptitude
+
+* Prime Numbers
+* HCF & LCM
+* Percentages
+* Ratio & Proportion
+* Average
+* Profit & Loss
+* Time & Work
+
+### Reasoning
+
+* Number Series
+* Alphabet Series
+* Coding-Decoding
+* Analogies
+* Blood Relations
+
+---
+
+# Homework
+
+## C Programming
+
+### Mini Project: Matrix Calculator
+
+Create a menu-driven program with these options:
+
+1. Display Matrix
+2. Add Two Matrices
+3. Transpose Matrix
+4. Sum of Each Row
+5. Sum of Each Column
+6. Exit
+
+---
+
+### Challenge
+
+Write a program to:
+
+* Check whether a matrix is an **Identity Matrix**.
+* Check whether a matrix is a **Diagonal Matrix**.
+
+---
+
+## Aptitude
+
+Solve **10 Time & Work** questions.
+
+---
+
+## Reasoning
+
+Solve **10 Blood Relation** questions.
+
+---
+
+# Weekly Self-Assessment
+
+Without looking at notes, answer these questions:
+
+### C
+
+* Can you write a function without referring to examples?
+* Can you sort an array using loops?
+* Can you create and traverse a 2D array?
+
+### Aptitude
+
+* Can you solve percentage and ratio problems within 2–3 minutes each?
+* Can you calculate combined work using fractions?
+
+### Reasoning
+
+* Can you solve basic blood relation questions confidently?
+* Can you identify number and alphabet series patterns quickly?
+
+---
+
+# End-of-Week Progress
+
