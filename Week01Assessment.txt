@@ -1,0 +1,413 @@
+# STEP Program Preparation – Week 1 Assessment
+
+**Time:** 60–75 minutes
+**Total Marks:** **100**
+
+### Marking Scheme
+
+* **C Programming:** 40 Marks
+* **Aptitude:** 30 Marks
+* **Logical Reasoning:** 30 Marks
+
+**Rules**
+
+* Don't use Google or AI while solving.
+* Attempt all questions.
+* For coding questions, write complete C programs.
+* Send me your answers when you're done. I'll evaluate them, give detailed feedback, update your readiness score, and adjust your Week 2 plan.
+
+---
+
+# Section A – C Programming (40 Marks)
+
+## Part 1 – Theory (10 Marks)
+
+**Q1.** What is the difference between a `while` loop and a `do-while` loop? (2 marks)
+
+**Q2.** What is the difference between an array and a normal variable? (2 marks)
+
+**Q3.** What is the purpose of a function? Mention any two advantages. (2 marks)
+
+**Q4.** What is the difference between:
+
+* Function declaration
+* Function definition
+* Function call (2 marks)
+
+**Q5.** Why do array indexes start from 0 in C? (2 marks)
+
+---
+
+## Part 2 – Output Questions (10 Marks)
+
+### Q6.
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    int i;
+
+    for(i=1;i<=5;i++)
+        printf("%d ",i);
+
+    return 0;
+}
+```
+
+Output?
+
+---
+
+### Q7.
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    int a=5;
+
+    if(a>3)
+        printf("YES");
+    else
+        printf("NO");
+
+    return 0;
+}
+```
+
+Output?
+
+---
+
+### Q8.
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    int a[5]={2,4,6,8,10};
+
+    printf("%d",a[2]);
+
+    return 0;
+}
+```
+
+Output?
+
+---
+
+### Q9.
+
+```c
+#include<stdio.h>
+
+int add(int a,int b)
+{
+    return a+b;
+}
+
+int main()
+{
+    printf("%d",add(3,7));
+}
+```
+
+Output?
+
+---
+
+### Q10.
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    int i=1;
+
+    do
+    {
+        printf("%d ",i);
+        i++;
+    }while(i<=3);
+
+    return 0;
+}
+```
+
+Output?
+
+---
+
+## Part 3 – Coding (20 Marks)
+
+Write complete C programs.
+
+### Q11. (5 marks)
+
+Find the largest of three numbers using a function.
+
+---
+
+### Q12. (5 marks)
+
+Input 10 integers into an array and find:
+
+* Maximum
+* Minimum
+
+---
+
+### Q13. (5 marks)
+
+Reverse the digits of a number.
+
+Example:
+
+```
+Input:
+12345
+
+Output:
+54321
+```
+
+---
+
+### Q14. (5 marks)
+
+Input a 3×3 matrix and print its transpose.
+
+---
+
+# Section B – Aptitude (30 Marks)
+
+## Q15.
+
+Find the HCF of **84 and 126**. (2 marks)
+
+---
+
+## Q16.
+
+Find the LCM of **18 and 24**. (2 marks)
+
+---
+
+## Q17.
+
+Find **35% of 640**. (2 marks)
+
+---
+
+## Q18.
+
+The ratio of boys to girls is **7 : 5**.
+
+If there are **84 boys**, how many girls are there? (3 marks)
+
+---
+
+## Q19.
+
+The average of five numbers is **28**.
+
+Find their total. (2 marks)
+
+---
+
+## Q20.
+
+A shopkeeper buys an item for **₹800** and sells it for **₹920**.
+
+Find the profit percentage. (3 marks)
+
+---
+
+## Q21.
+
+A can complete a work in **12 days**.
+
+B can complete the same work in **18 days**.
+
+In how many days will they complete the work together? (4 marks)
+
+---
+
+## Q22.
+
+Find the next number:
+
+```
+3 6 12 24 48 ?
+```
+
+(2 marks)
+
+---
+
+## Q23.
+
+Find the next number:
+
+```
+2 6 12 20 30 ?
+```
+
+(2 marks)
+
+---
+
+## Q24.
+
+Find the missing letter:
+
+```
+A C F J O ?
+```
+
+(3 marks)
+
+---
+
+# Section C – Logical Reasoning (30 Marks)
+
+## Q25.
+
+Find the next number:
+
+```
+1 4 9 16 25 ?
+```
+
+(2 marks)
+
+---
+
+## Q26.
+
+Find the next number:
+
+```
+5 10 17 26 37 ?
+```
+
+(2 marks)
+
+---
+
+## Q27.
+
+Coding-Decoding
+
+If
+
+```
+CAT → DBU
+```
+
+Then
+
+```
+DOG → ?
+```
+
+(3 marks)
+
+---
+
+## Q28.
+
+Find the odd one out.
+
+```
+Apple
+Banana
+Mango
+Carrot
+Orange
+```
+
+(3 marks)
+
+---
+
+## Q29.
+
+Find the next letter.
+
+```
+A D G J ?
+```
+
+(2 marks)
+
+---
+
+## Q30.
+
+Blood Relation
+
+Rahul is the son of Mohan.
+
+Mohan is the brother of Rina.
+
+How is Rina related to Rahul?
+
+(3 marks)
+
+---
+
+## Q31.
+
+If
+
+```
+A : C :: D : ?
+```
+
+(2 marks)
+
+---
+
+## Q32.
+
+Find the next number.
+
+```
+100 95 85 70 50 ?
+```
+
+(3 marks)
+
+---
+
+## Q33.
+
+Find the next number.
+
+```
+81 27 9 3 1 ?
+```
+
+(2 marks)
+
+---
+
+## Q34.
+
+P is the mother of Q.
+
+Q is the father of R.
+
+How is P related to R?
+
+(3 marks)
+
+---
+
