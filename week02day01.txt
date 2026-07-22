@@ -1,0 +1,205 @@
+Excellent! Since you've completed **Week 1 (Days 1–7)**, **Week 2** will build on your foundation. This week we'll focus on **Strings**, **Pointers (Basics)**, and improving your problem-solving speed while continuing aptitude and reasoning practice. Your current readiness is **42/100**, so the goal is to reach **50+/100** by the end of Week 2.
+
+# STEP Preparation – Week 2, Day 1
+
+**Total Study Time:** 2.5–3 Hours
+
+---
+
+# Session 1 – C Programming (100 Minutes)
+
+## Topic
+
+### Strings in C
+
+### Learn (30 Minutes)
+
+Study these concepts:
+
+* What is a string?
+* Character array vs string
+* Null character (`'\0'`)
+* Reading strings using `scanf()` and `fgets()`
+* Printing strings
+* String traversal using loops
+
+Example:
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    char name[50];
+
+    printf("Enter your name: ");
+    fgets(name, sizeof(name), stdin);
+
+    printf("Hello, %s", name);
+
+    return 0;
+}
+```
+
+---
+
+## Coding Exercises (50 Minutes)
+
+### Easy
+
+1. Read and print a string.
+2. Count the number of characters in a string (without `strlen()`).
+3. Count vowels and consonants.
+
+### Medium
+
+4. Reverse a string (without `strrev()`).
+5. Check whether a string is a palindrome.
+6. Count uppercase, lowercase, digits, and special characters.
+
+### Challenge
+
+7. Copy one string into another **without `strcpy()`**.
+8. Compare two strings **without `strcmp()`**.
+
+---
+
+## Debugging Challenge (20 Minutes)
+
+Find and fix the errors:
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    char name;
+
+    printf("Enter your name: ");
+    scanf("%s", &name);
+
+    printf("%s", name);
+
+    return 0;
+}
+```
+
+Answer:
+
+* Why is `char name;` incorrect?
+* Why is `%s` causing problems here?
+* Rewrite the program correctly.
+
+---
+
+# Session 2 – Aptitude (40 Minutes)
+
+## Topic
+
+### Time, Speed and Distance
+
+### Learn (15 Minutes)
+
+Study:
+
+* Speed = Distance / Time
+* Distance = Speed × Time
+* Time = Distance / Speed
+* Unit conversions:
+
+  * 1 km = 1000 m
+  * 1 hour = 60 minutes
+  * km/h ↔ m/s
+
+### Practice (25 Minutes)
+
+1. A car travels 180 km in 3 hours. Find its speed.
+2. A train travels at 60 km/h for 4 hours. Find the distance.
+3. A cyclist covers 45 km at 15 km/h. Find the time taken.
+4. Convert 72 km/h to m/s.
+5. Convert 20 m/s to km/h.
+
+---
+
+# Session 3 – Logical Reasoning (30 Minutes)
+
+## Topic
+
+### Direction Sense
+
+### Learn
+
+Remember:
+
+* North
+* South
+* East
+* West
+* Left turn
+* Right turn
+
+### Practice
+
+1. Ravi walks 10 m North, then 10 m East. Which direction is he from the starting point?
+2. A person walks 5 m South, then 5 m West. Which direction is he from the starting point?
+3. Aman walks 20 m East, turns right, and walks 10 m. Which direction is he facing?
+4. Facing North, you turn left, then left again. Which direction are you facing now?
+5. Facing West, you turn right, then right again. Which direction are you facing?
+
+---
+
+# Revision (15 Minutes)
+
+Revise:
+
+* Arrays (1D and 2D)
+* Bubble Sort
+* Linear Search
+* Functions
+
+Without looking at notes, explain:
+
+* What is a string?
+* Why is `'\0'` important?
+* Difference between a character and a string.
+
+---
+
+# Homework
+
+## C Programming
+
+### Mini Project: String Analyzer
+
+Create a menu-driven program with options:
+
+1. Find string length.
+2. Reverse a string.
+3. Check palindrome.
+4. Count vowels and consonants.
+5. Count digits and special characters.
+6. Exit.
+
+---
+
+### Challenge
+
+Write a program to:
+
+* Find the frequency of each character in a string.
+* Remove all spaces from a string.
+
+---
+
+## Aptitude
+
+Solve **10 Time, Speed & Distance** questions.
+
+---
+
+## Reasoning
+
+Solve **10 Direction Sense** questions.
+
+---
+
