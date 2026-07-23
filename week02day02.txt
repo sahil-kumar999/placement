@@ -1,0 +1,225 @@
+Excellent! Assuming you've completed **Week 2 – Day 1**, today we'll move to **String Library Functions** and more advanced string problems. These are frequently asked in college practicals and coding interviews. We'll also continue building your aptitude and reasoning skills.
+
+# STEP Preparation – Week 2, Day 2
+
+**Total Study Time:** 2.5–3 Hours
+
+---
+
+# Session 1 – C Programming (100 Minutes)
+
+## Topic
+
+### String Library Functions (`string.h`)
+
+### Learn (30 Minutes)
+
+Study the following functions:
+
+* `strlen()` – Find string length
+* `strcpy()` – Copy one string to another
+* `strcat()` – Concatenate (join) two strings
+* `strcmp()` – Compare two strings
+
+Example:
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str1[50] = "Hello";
+    char str2[50] = " World";
+
+    printf("Length: %lu\n", strlen(str1));
+
+    strcat(str1, str2);
+
+    printf("%s", str1);
+
+    return 0;
+}
+```
+
+**Understand:**
+
+* When to use each function.
+* Why the destination array must have enough space.
+* Difference between `==` and `strcmp()` for strings.
+
+---
+
+## Coding Exercises (50 Minutes)
+
+### Easy
+
+1. Find the length of a string using `strlen()`.
+2. Copy one string into another using `strcpy()`.
+3. Join two strings using `strcat()`.
+
+### Medium
+
+4. Compare two strings using `strcmp()`.
+5. Check whether two strings are equal (using `strcmp()`).
+6. Read a full name (with spaces) using `fgets()` and display it.
+
+### Challenge
+
+7. Count the frequency of each vowel in a string.
+8. Remove all spaces from a string.
+
+---
+
+## Debugging Challenge (20 Minutes)
+
+Find and fix the errors:
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char s1[5] = "Hello";
+    char s2[] = " World";
+
+    strcat(s1, s2);
+
+    printf("%s", s1);
+
+    return 0;
+}
+```
+
+### Questions
+
+* Why is `s1` too small?
+* What problem can `strcat()` cause here?
+* Rewrite the program correctly.
+
+---
+
+# Session 2 – Aptitude (40 Minutes)
+
+## Topic
+
+### Simple Interest & Compound Interest
+
+### Learn (15 Minutes)
+
+### Simple Interest
+
+```
+SI = (P × R × T) / 100
+```
+
+Where:
+
+* P = Principal
+* R = Rate
+* T = Time
+
+### Compound Interest
+
+```
+Amount = P × (1 + R/100)^T
+
+CI = Amount − Principal
+```
+
+---
+
+### Practice (25 Minutes)
+
+1. Find the simple interest on ₹5,000 at 8% for 3 years.
+2. Find the amount on ₹10,000 at 10% for 2 years (compound interest).
+3. A sum becomes ₹12,000 after 2 years at 10% simple interest. Find the principal.
+4. Find the compound interest on ₹8,000 at 5% for 2 years.
+5. Compare the SI and CI on ₹10,000 at 10% for 2 years.
+
+---
+
+# Session 3 – Logical Reasoning (30 Minutes)
+
+## Topic
+
+### Seating Arrangement (Linear)
+
+### Learn
+
+Basic rules:
+
+* Left
+* Right
+* Between
+* Immediate left/right
+* Ends of the row
+
+---
+
+### Practice
+
+1. Five people A, B, C, D, and E sit in a row. A is at the left end. E is at the right end. Who is sitting between them if B sits immediately right of A and D sits immediately left of E?
+2. P sits to the immediate left of Q. R sits to the immediate right of Q. Arrange them.
+3. In a row of five seats, M is in the middle seat. Which seat number is M occupying?
+4. A is third from the left in a row of seven people. What is A's position from the right?
+5. Arrange: K is left of L, M is right of L, and N is at the extreme left.
+
+---
+
+# Revision (15 Minutes)
+
+Revise:
+
+* Strings without library functions.
+* `strlen()`, `strcpy()`, `strcat()`, `strcmp()`.
+* Arrays and Functions.
+
+Without looking at notes, explain:
+
+* Why `strcmp()` is used instead of `==`.
+* Difference between `scanf("%s")` and `fgets()`.
+* What happens if a string array is too small.
+
+---
+
+# Homework
+
+## C Programming
+
+### Mini Project: String Utility Program
+
+Create a menu-driven program with these options:
+
+1. Find Length
+2. Copy String
+3. Concatenate Strings
+4. Compare Strings
+5. Reverse String
+6. Check Palindrome
+7. Exit
+
+---
+
+### Challenge
+
+Write a program to:
+
+* Count the frequency of every character.
+* Remove duplicate characters while preserving the first occurrence.
+
+---
+
+## Aptitude
+
+Solve **10 Simple Interest & Compound Interest** questions.
+
+---
+
+## Reasoning
+
+Solve **10 Seating Arrangement** questions.
+
+---
+
