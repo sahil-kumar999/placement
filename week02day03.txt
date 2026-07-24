@@ -1,0 +1,303 @@
+Excellent! You're progressing well through Week 2. **Today's focus is one of the most important C topics: Pointers.** Pointers are essential for advanced C programming, data structures, memory management, and technical interviews. We'll start from the basics and avoid jumping into advanced pointer concepts too quickly.
+
+# STEP Preparation – Week 2, Day 3
+
+**Total Study Time:** 2.5–3 Hours
+
+---
+
+# Session 1 – C Programming (100 Minutes)
+
+## Topic
+
+### Introduction to Pointers
+
+### Learn (35 Minutes)
+
+Study these concepts carefully:
+
+### 1. What is a Pointer?
+
+A pointer is a variable that stores the **address** of another variable.
+
+Example:
+
+```c
+int a = 10;
+int *p = &a;
+```
+
+Here:
+
+* `a` stores the value `10`
+* `&a` gives the memory address of `a`
+* `p` stores the address of `a`
+* `*p` gives the value stored at that address (`10`)
+
+---
+
+### 2. Operators
+
+* `&` → Address-of operator
+* `*` → Dereference operator
+
+Example:
+
+```c
+int a = 25;
+int *p = &a;
+
+printf("%d\n", a);
+printf("%p\n", (void*)&a);
+printf("%p\n", (void*)p);
+printf("%d\n", *p);
+```
+
+---
+
+### 3. Pointer Declaration
+
+```c
+int *ptr;
+float *fptr;
+char *cptr;
+```
+
+---
+
+### 4. Pointer and Variable Relationship
+
+If:
+
+```c
+int x = 50;
+int *ptr = &x;
+```
+
+Then:
+
+* `x` = 50
+* `&x` = address of x
+* `ptr` = address of x
+* `*ptr` = 50
+
+---
+
+## Coding Exercises (45 Minutes)
+
+### Easy
+
+1. Print the value and address of a variable.
+2. Store the address of a variable in a pointer.
+3. Print the value using the pointer.
+
+### Medium
+
+4. Change the value of a variable using a pointer.
+5. Swap two numbers using pointers.
+6. Create a function that swaps two numbers using pointers.
+
+### Challenge
+
+7. Find the larger of two numbers using pointers.
+8. Calculate the sum of two numbers using pointers.
+
+---
+
+## Debugging Challenge (20 Minutes)
+
+Find and fix the errors:
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int a = 10;
+    int *p;
+
+    *p = &a;
+
+    printf("%d", *p);
+
+    return 0;
+}
+```
+
+### Questions
+
+1. Why is `*p = &a;` incorrect?
+2. What is the correct way to initialize the pointer?
+3. What happens if you dereference an uninitialized pointer?
+
+---
+
+# Session 2 – Aptitude (40 Minutes)
+
+## Topic
+
+### Time, Speed & Distance (Advanced)
+
+### Learn (15 Minutes)
+
+Study:
+
+* Relative Speed
+* Opposite Direction
+* Same Direction
+* Average Speed
+
+Important formulas:
+
+```text
+Relative Speed (Opposite) = Speed₁ + Speed₂
+
+Relative Speed (Same) = Speed₁ − Speed₂
+```
+
+---
+
+### Practice (25 Minutes)
+
+1. Two trains move in opposite directions at 50 km/h and 70 km/h. Find their relative speed.
+2. Two cars travel in the same direction at 80 km/h and 60 km/h. Find their relative speed.
+3. A person walks 6 km at 3 km/h and returns at 6 km/h. Find the average speed.
+4. A train 120 m long crosses a pole in 8 seconds. Find its speed in m/s.
+5. Convert 54 km/h to m/s.
+
+---
+
+# Session 3 – Logical Reasoning (30 Minutes)
+
+## Topic
+
+### Syllogisms (Basics)
+
+### Learn
+
+Understand these terms:
+
+* All
+* Some
+* No
+
+Example:
+
+```text
+All Cats are Animals.
+All Animals are Living Beings.
+
+Conclusion:
+All Cats are Living Beings.
+```
+
+---
+
+### Practice
+
+1. Statements:
+
+   * All roses are flowers.
+   * All flowers are plants.
+
+   Conclusion:
+
+   * All roses are plants.
+
+2. Statements:
+
+   * Some students are athletes.
+   * All athletes are healthy.
+
+   What can you conclude?
+
+3. Statements:
+
+   * No birds are mammals.
+   * All sparrows are birds.
+
+   Conclusion:
+
+   * No sparrows are mammals.
+
+4. Statements:
+
+   * All pens are stationery.
+   * Some stationery are books.
+
+   Is it certain that some pens are books?
+
+5. Statements:
+
+   * Some cars are electric.
+   * All electric vehicles are eco-friendly.
+
+   What conclusion can you draw?
+
+---
+
+# Revision (15 Minutes)
+
+Without looking at notes, explain:
+
+* What is a pointer?
+* Difference between `*` and `&`.
+* Why pointers are useful.
+* How a pointer stores an address.
+
+---
+
+# Homework
+
+## C Programming
+
+### Mini Project: Pointer Calculator
+
+Create a program that:
+
+* Reads two integers.
+* Uses pointers to:
+
+  * Add
+  * Subtract
+  * Multiply
+  * Divide
+* Displays the results.
+
+---
+
+### Challenge
+
+Write a program to:
+
+* Swap two numbers using a function with pointers.
+* Find the maximum element in an array using pointer notation instead of array indexing.
+
+---
+
+## Aptitude
+
+Solve **10 advanced Time, Speed & Distance** questions.
+
+---
+
+## Reasoning
+
+Solve **10 syllogism** questions.
+
+---
+
+# Weekly Coding Challenge
+
+Write a program that:
+
+* Accepts an array of 10 integers.
+* Uses pointers to:
+
+  * Find the sum.
+  * Find the average.
+  * Find the maximum value.
+  * Find the minimum value.
+
+---
+
