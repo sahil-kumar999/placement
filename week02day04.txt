@@ -1,0 +1,268 @@
+Excellent! You're entering one of the most important parts of C. Today you'll learn **Pointer Arithmetic** and **Pointers with Arrays**. These concepts are used extensively in data structures, file handling, and interview questions.
+
+# STEP Preparation – Week 2, Day 4
+
+**Total Study Time:** 2.5–3 Hours
+
+---
+
+# Session 1 – C Programming (100 Minutes)
+
+## Topic
+
+### Pointer Arithmetic & Pointers with Arrays
+
+### Learn (35 Minutes)
+
+## 1. Pointer Arithmetic
+
+Pointers can be incremented and decremented.
+
+```c
+int a[] = {10,20,30,40,50};
+int *p = a;
+
+printf("%d\n", *p);   // 10
+
+p++;
+
+printf("%d\n", *p);   // 20
+```
+
+Remember:
+
+* `p++` moves to the next element.
+* `p--` moves to the previous element.
+* `p + n` moves forward by `n` elements.
+* `p - n` moves backward by `n` elements.
+
+---
+
+## 2. Arrays and Pointers
+
+The array name stores the address of its first element.
+
+```c
+int a[5]={10,20,30,40,50};
+
+printf("%d\n", a[0]);
+printf("%d\n", *a);
+
+printf("%d\n", a[2]);
+printf("%d\n", *(a+2));
+```
+
+Notice:
+
+```
+a[3]
+```
+
+is equivalent to
+
+```
+*(a+3)
+```
+
+---
+
+## 3. Traversing an Array Using Pointers
+
+```c
+int a[5]={2,4,6,8,10};
+int *p=a;
+
+for(int i=0;i<5;i++)
+{
+    printf("%d ",*(p+i));
+}
+```
+
+---
+
+## Coding Exercises (45 Minutes)
+
+### Easy
+
+1. Print all array elements using pointers.
+2. Find the sum of array elements using pointers.
+3. Find the average using pointers.
+
+### Medium
+
+4. Find the largest element using pointers.
+5. Find the smallest element using pointers.
+6. Reverse an array using pointers.
+
+### Challenge
+
+7. Count even and odd elements using pointers.
+8. Search for a number using pointer notation.
+
+---
+
+## Debugging Challenge (20 Minutes)
+
+Find and fix the errors.
+
+```c
+#include<stdio.h>
+
+int main()
+{
+    int a[5]={10,20,30,40,50};
+
+    int *p;
+
+    p=a;
+
+    printf("%d\n",*(p+5));
+
+    return 0;
+}
+```
+
+### Questions
+
+1. Why is `*(p+5)` incorrect?
+2. What is the last valid element?
+3. Rewrite the program correctly.
+
+---
+
+# Session 2 – Aptitude (40 Minutes)
+
+## Topic
+
+### Boats and Streams (Basics)
+
+### Learn (15 Minutes)
+
+Important formulas:
+
+```
+Downstream Speed
+=
+Boat Speed + Stream Speed
+```
+
+```
+Upstream Speed
+=
+Boat Speed − Stream Speed
+```
+
+Where:
+
+* Boat Speed = speed in still water
+* Stream Speed = speed of the river
+
+---
+
+### Practice (25 Minutes)
+
+1. Boat speed = **12 km/h**, stream speed = **3 km/h**. Find the downstream speed.
+2. Find the upstream speed for the same boat.
+3. A boat travels **30 km downstream** at **15 km/h**. Find the time taken.
+4. A boat travels **24 km upstream** at **8 km/h**. Find the time taken.
+5. Boat speed = **18 km/h**, stream speed = **4 km/h**. Find both upstream and downstream speeds.
+
+---
+
+# Session 3 – Logical Reasoning (30 Minutes)
+
+## Topic
+
+### Coding-Decoding (Advanced)
+
+Use this rule:
+
+Every letter is shifted **+2**.
+
+Example:
+
+```
+CAT
+↓
+
+ECV
+```
+
+---
+
+### Practice
+
+Encode:
+
+1. DOG
+2. STEP
+3. INDIA
+4. CODE
+5. ARRAY
+
+Decode:
+
+6. ECV
+7. FQI
+8. UVGR
+9. EQFG
+10. JGNNQ
+
+---
+
+# Revision (15 Minutes)
+
+Without looking at notes, explain:
+
+* Difference between an array and a pointer.
+* Why `a[i]` is equivalent to `*(a+i)`.
+* What pointer arithmetic means.
+* When pointer arithmetic becomes unsafe.
+
+---
+
+# Homework
+
+## C Programming
+
+### Mini Project
+
+**Array Statistics Using Pointers**
+
+Features:
+
+* Input 10 integers.
+* Print all numbers using pointers.
+* Find:
+
+  * Sum
+  * Average
+  * Maximum
+  * Minimum
+  * Even count
+  * Odd count
+
+Use only pointer notation wherever possible.
+
+---
+
+### Challenge
+
+Write a program to:
+
+* Reverse an array using pointers only.
+* Copy one array into another using pointers.
+
+---
+
+## Aptitude
+
+Solve **10 Boats and Streams** questions.
+
+---
+
+## Reasoning
+
+Solve **10 advanced Coding-Decoding** questions.
+
+---
