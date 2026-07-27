@@ -1,0 +1,321 @@
+Excellent! You're halfway through **Week 2**. Today we'll combine **Functions and Arrays**, which is how arrays are commonly used in real-world C programs. This will also prepare you for mini-projects and coding interviews.
+
+# STEP Preparation – Week 2, Day 5
+
+**Total Study Time:** **2.5–3 Hours**
+
+---
+
+# Session 1 – C Programming (100 Minutes)
+
+## Topic
+
+### Passing Arrays to Functions
+
+### Learn (30 Minutes)
+
+Study these concepts:
+
+### 1. Passing an Array to a Function
+
+Example:
+
+```c
+#include <stdio.h>
+
+void printArray(int arr[], int size)
+{
+    for(int i = 0; i < size; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+}
+
+int main()
+{
+    int a[5] = {10, 20, 30, 40, 50};
+
+    printArray(a, 5);
+
+    return 0;
+}
+```
+
+---
+
+### 2. Arrays are Passed by Reference
+
+When an array is passed to a function, the function receives the address of the first element.
+
+Example:
+
+```c
+void doubleValues(int arr[], int size)
+{
+    for(int i = 0; i < size; i++)
+    {
+        arr[i] *= 2;
+    }
+}
+```
+
+Changes made inside the function affect the original array.
+
+---
+
+### 3. Functions That Process Arrays
+
+Common operations:
+
+* Sum
+* Average
+* Maximum
+* Minimum
+* Search
+
+---
+
+## Coding Exercises (50 Minutes)
+
+### Easy
+
+1. Create a function to print an array.
+2. Create a function to calculate the sum of an array.
+3. Create a function to calculate the average.
+
+### Medium
+
+4. Create a function to find the maximum element.
+5. Create a function to find the minimum element.
+6. Create a function to search for an element (Linear Search).
+
+### Challenge
+
+7. Create a function to reverse an array.
+8. Create a function to sort an array in ascending order.
+
+---
+
+## Debugging Challenge (20 Minutes)
+
+Find and fix the errors.
+
+```c
+#include <stdio.h>
+
+void printArray(int arr)
+{
+    int i;
+
+    for(i = 0; i < 5; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+}
+
+int main()
+{
+    int a[5] = {1,2,3,4,5};
+
+    printArray(a);
+
+    return 0;
+}
+```
+
+### Questions
+
+1. Why is `int arr` incorrect?
+2. What should the function parameter be?
+3. Rewrite the corrected program.
+
+---
+
+# Session 2 – Aptitude (40 Minutes)
+
+## Topic
+
+### Pipes and Cisterns (Basics)
+
+### Learn (15 Minutes)
+
+Key idea:
+
+A pipe filling a tank is **positive work**.
+
+A pipe emptying a tank is **negative work**.
+
+Example:
+
+```text
+Pipe A fills a tank in 8 hours.
+One hour work = 1/8
+
+Pipe B empties the tank in 12 hours.
+One hour work = -1/12
+
+Together:
+1/8 - 1/12 = 1/24
+
+Tank fills in 24 hours.
+```
+
+---
+
+### Practice (25 Minutes)
+
+1. A pipe fills a tank in **6 hours**. How much of the tank does it fill in one hour?
+2. A pipe empties a tank in **10 hours**. What fraction is emptied in one hour?
+3. Pipe A fills a tank in **8 hours** and Pipe B fills it in **12 hours**. How long together?
+4. Pipe A fills in **9 hours** and Pipe B empties in **18 hours**. How long will it take to fill the tank?
+5. A tank is full. One outlet empties it in **20 hours**. How much water remains after **5 hours** if only the outlet is open?
+
+---
+
+# Session 3 – Logical Reasoning (30 Minutes)
+
+## Topic
+
+### Statement and Conclusion (Basics)
+
+### Learn
+
+Read the statement carefully.
+
+Accept only conclusions that **must** follow.
+
+---
+
+### Practice
+
+**Q1**
+
+Statement:
+
+> All engineers are graduates.
+> Rahul is an engineer.
+
+Conclusions:
+
+1. Rahul is a graduate.
+2. Rahul is a doctor.
+
+---
+
+**Q2**
+
+Statement:
+
+> Some students are athletes.
+
+Conclusions:
+
+1. Some athletes are students.
+2. All students are athletes.
+
+---
+
+**Q3**
+
+Statement:
+
+> No apples are vegetables.
+
+Conclusion:
+
+1. No vegetables are apples.
+2. Some vegetables are apples.
+
+---
+
+**Q4**
+
+Statement:
+
+> All birds can fly.
+> Penguin is a bird.
+
+(Assume the statement is true for this exercise.)
+
+Conclusions:
+
+1. Penguin can fly.
+2. Penguin is an animal.
+
+---
+
+**Q5**
+
+Statement:
+
+> Some books are novels.
+> All novels are interesting.
+
+Conclusions:
+
+1. Some books are interesting.
+2. All books are interesting.
+
+---
+
+# Revision (15 Minutes)
+
+Without looking at notes, explain:
+
+* Why arrays are passed to functions.
+* Difference between passing a single variable and an array.
+* Why changes inside a function affect the original array.
+* How to write reusable functions.
+
+---
+
+# Homework
+
+## C Programming
+
+### Mini Project: Student Marks Management System
+
+Requirements:
+
+* Input marks of 10 students.
+* Use separate functions to:
+
+  * Input marks
+  * Display marks
+  * Calculate total
+  * Calculate average
+  * Find highest mark
+  * Find lowest mark
+  * Count pass/fail students
+
+---
+
+### Challenge
+
+Create an **Array Utility Library** with separate functions for:
+
+* Sum
+* Average
+* Maximum
+* Minimum
+* Search
+* Reverse
+* Sort
+
+Call all functions from `main()` using a menu-driven program.
+
+---
+
+## Aptitude
+
+Solve **10 Pipes and Cisterns** questions.
+
+---
+
+## Reasoning
+
+Solve **10 Statement and Conclusion** questions.
+
+---
+
+'re making steady progress. The array-and-function combination you learn today is a foundation you'll reuse in larger C projects and later in Java and Python as well.
