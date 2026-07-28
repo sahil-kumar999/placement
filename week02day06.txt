@@ -1,0 +1,319 @@
+Excellent! You're on **Week 2 – Day 6**. Today you'll combine **2D Arrays and Functions**, an important skill for matrix-based problems and programming practicals. We'll also introduce **Permutations & Combinations** and **Data Sufficiency**, both common in aptitude tests.
+
+# STEP Preparation – Week 2, Day 6
+
+**Total Study Time:** **2.5–3 Hours**
+
+---
+
+# Session 1 – C Programming (100 Minutes)
+
+## Topic
+
+### 2D Arrays with Functions
+
+### Learn (30 Minutes)
+
+### 1. Passing a 2D Array to a Function
+
+Example:
+
+```c
+#include <stdio.h>
+
+void printMatrix(int a[3][3])
+{
+    int i, j;
+
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            printf("%d ", a[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+int main()
+{
+    int a[3][3] = {
+        {1,2,3},
+        {4,5,6},
+        {7,8,9}
+    };
+
+    printMatrix(a);
+
+    return 0;
+}
+```
+
+### 2. Functions for Matrix Operations
+
+Create separate functions for:
+
+* Input Matrix
+* Display Matrix
+* Matrix Addition
+* Matrix Subtraction
+* Matrix Transpose
+* Sum of Each Row
+* Sum of Each Column
+
+---
+
+## Coding Exercises (50 Minutes)
+
+### Easy
+
+1. Create a function to input a **3×3 matrix**.
+2. Create a function to display a matrix.
+3. Create a function to calculate the sum of all elements.
+
+### Medium
+
+4. Create a function to find the largest element.
+5. Create a function to find the smallest element.
+6. Create a function to calculate row sums.
+
+### Challenge
+
+7. Add two matrices using functions.
+8. Find the transpose of a matrix using a function.
+
+---
+
+## Debugging Challenge (20 Minutes)
+
+Find and fix the errors.
+
+```c
+#include <stdio.h>
+
+void display(int a[][])
+{
+    int i, j;
+
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            printf("%d ", a[i][j]);
+        }
+    }
+}
+
+int main()
+{
+    int a[3][3];
+
+    display(a);
+
+    return 0;
+}
+```
+
+### Questions
+
+1. Why is `int a[][]` invalid in C?
+2. What should the function parameter be?
+3. Rewrite the corrected program.
+
+---
+
+# Session 2 – Aptitude (40 Minutes)
+
+## Topic
+
+### Permutations & Combinations (Introduction)
+
+### Learn (15 Minutes)
+
+### Permutation (Arrangement)
+
+Formula:
+
+```text
+ⁿPᵣ = n! / (n − r)!
+```
+
+### Combination (Selection)
+
+Formula:
+
+```text
+ⁿCᵣ = n! / (r! × (n − r)!)
+```
+
+Remember:
+
+* **Permutation → Order matters**
+* **Combination → Order does not matter**
+
+---
+
+### Practice (25 Minutes)
+
+1. Calculate **5P2**.
+2. Calculate **5C2**.
+3. In how many ways can 3 students be arranged from 6 students?
+4. In how many ways can a team of 3 be selected from 6 students?
+5. Find **6P3** and **6C3**.
+
+---
+
+# Session 3 – Logical Reasoning (30 Minutes)
+
+## Topic
+
+### Data Sufficiency (Basics)
+
+### Learn
+
+Determine whether the given statements are enough to answer the question.
+
+Use this answer format:
+
+* A. Statement I alone is sufficient.
+* B. Statement II alone is sufficient.
+* C. Both statements together are sufficient.
+* D. Neither statement is sufficient.
+
+---
+
+### Practice
+
+### Q1
+
+Question:
+
+> Is x greater than 20?
+
+Statement I:
+
+* x = 25
+
+Statement II:
+
+* x is an even number.
+
+---
+
+### Q2
+
+Question:
+
+> Is y divisible by 5?
+
+Statement I:
+
+* y ends with 0.
+
+Statement II:
+
+* y is divisible by 10.
+
+---
+
+### Q3
+
+Question:
+
+> What is Rahul's age?
+
+Statement I:
+
+* Rahul is older than Aman.
+
+Statement II:
+
+* Aman is 18 years old.
+
+---
+
+### Q4
+
+Question:
+
+> Is a triangle right-angled?
+
+Statement I:
+
+* The sides are 3, 4, and 5.
+
+Statement II:
+
+* One angle is 90°.
+
+---
+
+### Q5
+
+Question:
+
+> Is n an odd number?
+
+Statement I:
+
+* n is divisible by 2.
+
+Statement II:
+
+* n leaves a remainder of 1 when divided by 2.
+
+---
+
+# Revision (15 Minutes)
+
+Without looking at notes, explain:
+
+* How to pass a 2D array to a function.
+* Why the number of columns must be specified in a function parameter.
+* Difference between permutation and combination.
+* How to decide whether statements are sufficient.
+
+---
+
+# Homework
+
+## C Programming
+
+### Mini Project: Matrix Calculator
+
+Create a menu-driven program with these options:
+
+1. Input Matrix
+2. Display Matrix
+3. Add Matrices
+4. Subtract Matrices
+5. Transpose Matrix
+6. Row Sum
+7. Column Sum
+8. Exit
+
+Use **separate functions** for every operation.
+
+---
+
+### Challenge
+
+Write a program to:
+
+* Check whether a matrix is **symmetric**.
+* Check whether a matrix is an **identity matrix**.
+
+---
+
+## Aptitude
+
+Solve **10 Permutations & Combinations** questions.
+
+---
+
+## Reasoning
+
+Solve **10 Data Sufficiency** questions.
+
+---
+
