@@ -1,0 +1,357 @@
+Excellent! 🎉 You've reached **Week 2 – Day 7**. This is the final day of Week 2, where you'll learn **File Handling**, an essential C topic for projects like Student Management Systems. We'll also introduce **Probability** and **Puzzle Solving**, then finish with a practical mini-project.
+
+# STEP Preparation – Week 2, Day 7
+
+**Total Study Time:** **2.5–3 Hours**
+
+---
+
+# Session 1 – C Programming (100 Minutes)
+
+## Topic
+
+# File Handling (Basics)
+
+### Learn (35 Minutes)
+
+## 1. What is File Handling?
+
+File handling allows programs to **store data permanently** instead of losing it when the program exits.
+
+---
+
+## 2. File Pointer
+
+```c
+FILE *fp;
+```
+
+`FILE` is a structure defined in `<stdio.h>`.
+
+---
+
+## 3. Opening a File
+
+```c
+fp = fopen("student.txt", "w");
+```
+
+### File Modes
+
+| Mode   | Purpose                                         |
+| ------ | ----------------------------------------------- |
+| `"r"`  | Read existing file                              |
+| `"w"`  | Write (creates new file or overwrites existing) |
+| `"a"`  | Append data at the end                          |
+| `"r+"` | Read and write                                  |
+| `"w+"` | Read and write (overwrites)                     |
+| `"a+"` | Read and append                                 |
+
+---
+
+## 4. Writing to a File
+
+```c
+fprintf(fp, "Hello World");
+```
+
+---
+
+## 5. Reading from a File
+
+```c
+char ch;
+
+while((ch = fgetc(fp)) != EOF)
+{
+    printf("%c", ch);
+}
+```
+
+---
+
+## 6. Closing a File
+
+```c
+fclose(fp);
+```
+
+Always close the file after finishing.
+
+---
+
+## Coding Exercises (50 Minutes)
+
+### Easy
+
+1. Create a file and write your name into it.
+2. Read the contents of a file and display them.
+3. Write five numbers into a file.
+
+### Medium
+
+4. Read five numbers from a file and calculate their sum.
+5. Copy the contents of one file into another.
+6. Count the number of characters in a file.
+
+### Challenge
+
+7. Count:
+
+   * Characters
+   * Words
+   * Lines
+     in a text file.
+
+8. Append new text to an existing file.
+
+---
+
+## Debugging Challenge (15 Minutes)
+
+Find and fix the errors.
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    FILE *fp;
+
+    fp = fopen("data.txt","r");
+
+    fprintf(fp,"Hello");
+
+    fclose(fp);
+
+    return 0;
+}
+```
+
+### Questions
+
+1. Why is writing not allowed here?
+2. Which file mode should be used?
+3. What should you do if `fopen()` returns `NULL`?
+
+---
+
+# Session 2 – Aptitude (40 Minutes)
+
+## Topic
+
+# Probability (Basics)
+
+### Learn (15 Minutes)
+
+Formula:
+
+```text
+Probability = Number of Favourable Outcomes
+              ------------------------------
+              Total Number of Outcomes
+```
+
+Probability is always between **0** and **1**.
+
+---
+
+### Practice (25 Minutes)
+
+1. A coin is tossed once. Find the probability of getting a Head.
+2. A die is rolled. Find the probability of getting:
+
+   * 4
+   * An even number
+3. A bag contains 5 red and 3 blue balls. Find the probability of selecting a blue ball.
+4. A card is drawn from a standard deck of 52 cards. Find the probability of drawing:
+
+   * A King
+   * A Heart
+5. Two coins are tossed. Find the probability of getting exactly one Head.
+
+---
+
+# Session 3 – Logical Reasoning (30 Minutes)
+
+## Topic
+
+# Puzzle Solving (Introduction)
+
+### Practice
+
+### Q1
+
+Five friends — **A, B, C, D, E** — sit in a row.
+
+* A is at the extreme left.
+* E is at the extreme right.
+* B sits immediately right of A.
+* D sits immediately left of E.
+
+**Question:** Who sits in the middle?
+
+---
+
+### Q2
+
+Four people — **P, Q, R, S** — stand in a line.
+
+* Q stands between P and R.
+* S stands at the right end.
+
+Arrange them.
+
+---
+
+### Q3
+
+Five students stand in a line.
+
+* M is third from the left.
+* N is immediately left of M.
+* O is at the extreme right.
+
+Arrange them.
+
+---
+
+### Q4
+
+There are four houses in a row.
+
+* Red is left of Blue.
+* Green is right of Blue.
+* Yellow is at the extreme left.
+
+Arrange the houses.
+
+---
+
+### Q5
+
+Five books are arranged on a shelf.
+
+* English is left of Science.
+* Maths is immediately right of English.
+* History is at the extreme left.
+* Computer is at the extreme right.
+
+Arrange the books.
+
+---
+
+# Week 2 Revision (20 Minutes)
+
+## C Programming
+
+Revise:
+
+* Strings
+* String library functions
+* Pointers
+* Pointer arithmetic
+* Arrays with functions
+* 2D arrays with functions
+* File handling
+
+---
+
+## Aptitude
+
+Revise:
+
+* Time, Speed & Distance
+* Boats & Streams
+* Pipes & Cisterns
+* Simple & Compound Interest
+* Permutation & Combination
+* Probability
+
+---
+
+## Reasoning
+
+Revise:
+
+* Direction Sense
+* Seating Arrangement
+* Syllogism
+* Statement & Conclusion
+* Data Sufficiency
+* Puzzle Solving
+
+---
+
+# Homework
+
+## C Programming
+
+### Weekly Mini Project
+
+## Student Record Management System
+
+Features:
+
+* Add student record
+* Display all records
+* Search student
+* Update student
+* Delete student (optional challenge)
+* Save records to a file
+* Read records from a file
+
+Use:
+
+* Functions
+* Arrays
+* File Handling
+
+---
+
+### Bonus Challenge
+
+Create a simple **Contact Book** that stores:
+
+* Name
+* Phone Number
+* Email
+
+Save and retrieve contacts using file handling.
+
+---
+
+## Aptitude
+
+Solve **10 Probability** questions.
+
+---
+
+## Reasoning
+
+Solve **10 Puzzle** questions.
+
+---
+
+# Week 2 Self-Assessment
+
+Before moving to Week 3, ask yourself:
+
+### C Programming
+
+* Can I use pointers confidently?
+* Can I pass arrays and matrices to functions?
+* Can I read from and write to files?
+* Can I build a menu-driven program?
+
+### Aptitude
+
+* Can I solve questions within the expected time?
+* Which topics still take me too long?
+
+### Reasoning
+
+* Can I identify patterns without guessing?
+* Can I solve seating and puzzle questions systematically?
+
+---
