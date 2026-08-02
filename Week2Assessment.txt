@@ -1,0 +1,417 @@
+# STEP Program Preparation – Week 2 Self-Assessment
+
+**Duration:** 75–90 Minutes
+**Total Marks:** **100**
+
+This assessment covers everything you studied in **Week 2**:
+
+* Strings
+* String Functions
+* Pointers
+* Pointer Arithmetic
+* Arrays with Functions
+* 2D Arrays with Functions
+* File Handling
+* Aptitude (Week 2 topics)
+* Logical Reasoning (Week 2 topics)
+
+---
+
+# Section A – C Programming (40 Marks)
+
+## Part 1 – Theory (10 Marks)
+
+### Q1. (2 Marks)
+
+What is a pointer? Explain the purpose of the `&` and `*` operators.
+
+---
+
+### Q2. (2 Marks)
+
+What is the difference between:
+
+* `scanf("%s", str)`
+* `fgets(str, sizeof(str), stdin)`
+
+---
+
+### Q3. (2 Marks)
+
+What is pointer arithmetic? Give one example.
+
+---
+
+### Q4. (2 Marks)
+
+Why are arrays passed by reference to functions in C?
+
+---
+
+### Q5. (2 Marks)
+
+Name any four file opening modes in C and explain their purpose.
+
+---
+
+# Part 2 – Output Questions (10 Marks)
+
+### Q6.
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    char str[] = "STEP";
+
+    printf("%c", str[2]);
+
+    return 0;
+}
+```
+
+Output?
+
+---
+
+### Q7.
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int a = 20;
+    int *p = &a;
+
+    printf("%d", *p);
+
+    return 0;
+}
+```
+
+Output?
+
+---
+
+### Q8.
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int a[] = {10,20,30};
+
+    printf("%d", *(a+1));
+
+    return 0;
+}
+```
+
+Output?
+
+---
+
+### Q9.
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    FILE *fp;
+
+    fp = fopen("demo.txt","w");
+
+    if(fp != NULL)
+    {
+        fprintf(fp,"Hello");
+        fclose(fp);
+    }
+
+    printf("Done");
+
+    return 0;
+}
+```
+
+Output?
+
+---
+
+### Q10.
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int x = 5;
+
+    int *p = &x;
+
+    *p = 15;
+
+    printf("%d", x);
+
+    return 0;
+}
+```
+
+Output?
+
+---
+
+# Part 3 – Coding (20 Marks)
+
+Write complete C programs.
+
+### Q11. (5 Marks)
+
+Write a program to:
+
+* Input a string.
+* Count vowels and consonants.
+
+---
+
+### Q12. (5 Marks)
+
+Write a program using pointers to swap two numbers.
+
+---
+
+### Q13. (5 Marks)
+
+Write a function that accepts an array and returns the largest element.
+
+---
+
+### Q14. (5 Marks)
+
+Write a program to:
+
+* Write 5 integers into a file.
+* Read them back.
+* Print their sum.
+
+---
+
+# Section B – Aptitude (30 Marks)
+
+### Q15. (2 Marks)
+
+A car travels **240 km** in **4 hours**.
+
+Find its speed.
+
+---
+
+### Q16. (2 Marks)
+
+Convert **72 km/h** into **m/s**.
+
+---
+
+### Q17. (3 Marks)
+
+A boat's speed in still water is **15 km/h**.
+
+The stream speed is **3 km/h**.
+
+Find:
+
+* Upstream speed
+* Downstream speed
+
+---
+
+### Q18. (3 Marks)
+
+Pipe A fills a tank in **8 hours**.
+
+Pipe B fills it in **12 hours**.
+
+How long together?
+
+---
+
+### Q19. (3 Marks)
+
+Find:
+
+* **5P2**
+* **5C2**
+
+---
+
+### Q20. (3 Marks)
+
+A coin is tossed once.
+
+Find the probability of getting:
+
+* Head
+* Tail
+
+---
+
+### Q21. (4 Marks)
+
+A train **120 m** long crosses a pole in **8 seconds**.
+
+Find its speed in **m/s** and **km/h**.
+
+---
+
+### Q22. (5 Marks)
+
+A sum of **₹10,000** is invested at **10% compound interest** for **2 years**.
+
+Find:
+
+* Amount
+* Compound Interest
+
+---
+
+### Q23. (5 Marks)
+
+A person travels:
+
+* 60 km at **30 km/h**
+* 60 km at **60 km/h**
+
+Find the **average speed**.
+
+---
+
+# Section C – Logical Reasoning (30 Marks)
+
+### Q24. (3 Marks)
+
+Facing North, you turn:
+
+* Right
+* Right
+* Left
+
+Which direction are you facing?
+
+---
+
+### Q25. (3 Marks)
+
+Statements:
+
+* All doctors are graduates.
+* Rahul is a doctor.
+
+Conclusion?
+
+---
+
+### Q26. (3 Marks)
+
+Statements:
+
+* Some students are singers.
+* All singers are artists.
+
+What conclusion definitely follows?
+
+---
+
+### Q27. (3 Marks)
+
+Arrange:
+
+* A is left of B.
+* C is right of B.
+* D is at the extreme left.
+
+---
+
+### Q28. (3 Marks)
+
+If:
+
+```
+CAT → ECV
+```
+
+(using +2 shift)
+
+Encode:
+
+```
+DOG → ?
+```
+
+---
+
+### Q29. (3 Marks)
+
+Question:
+
+Is **x** even?
+
+Statement I:
+
+* x is divisible by 2.
+
+Statement II:
+
+* x is greater than 10.
+
+Choose:
+
+* A. I alone
+* B. II alone
+* C. Both together
+* D. Neither
+
+---
+
+### Q30. (3 Marks)
+
+P is the mother of Q.
+
+Q is the father of R.
+
+How is P related to R?
+
+---
+
+### Q31. (3 Marks)
+
+Five people sit in a row.
+
+* A is at the left end.
+* E is at the right end.
+* B is immediately right of A.
+* D is immediately left of E.
+
+Who sits in the middle?
+
+---
+
+### Q32. (6 Marks)
+
+Solve this puzzle:
+
+Four friends — **K, L, M, N** — sit in a row.
+
+* K is not at either end.
+* L is immediately to the left of M.
+* N is at the right end.
+
+**Questions:**
+
+1. What is the seating arrangement from left to right?
+2. Who sits second from the left?
+3. Who sits immediately left of N?
+
+---
