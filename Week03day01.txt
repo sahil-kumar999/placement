@@ -1,0 +1,292 @@
+Excellent! 🎉 Welcome to **Week 3**. You've completed two weeks covering the core fundamentals of C, aptitude, and reasoning. This week, we'll begin learning **Structures**, which are essential for building real-world applications such as Student Management Systems, Library Management Systems, and Banking Systems.
+
+# STEP Preparation – Week 3, Day 1
+
+**Total Study Time:** **2.5–3 Hours**
+
+---
+
+# Session 1 – C Programming (100 Minutes)
+
+## Topic
+
+# Structures in C (Basics)
+
+### Learn (30 Minutes)
+
+Study these concepts:
+
+### 1. What is a Structure?
+
+A structure is a **user-defined data type** that groups different types of data under one name.
+
+Example:
+
+```c
+struct Student
+{
+    int rollNo;
+    char name[50];
+    float marks;
+};
+```
+
+---
+
+### 2. Declaring Structure Variables
+
+```c
+struct Student s1;
+```
+
+---
+
+### 3. Accessing Members
+
+Use the **dot (`.`) operator**.
+
+```c
+s1.rollNo = 101;
+strcpy(s1.name, "Rahul");
+s1.marks = 89.5;
+```
+
+---
+
+### 4. Input and Output
+
+```c
+printf("Enter Roll No: ");
+scanf("%d", &s1.rollNo);
+
+printf("Enter Name: ");
+scanf(" %49[^\n]", s1.name);
+
+printf("Enter Marks: ");
+scanf("%f", &s1.marks);
+```
+
+---
+
+### 5. Why Use Structures?
+
+Without structures:
+
+```text
+rollNo
+name
+marks
+```
+
+are stored separately.
+
+With structures:
+
+```text
+Student
+ ├── rollNo
+ ├── name
+ └── marks
+```
+
+Everything belongs to one student record.
+
+---
+
+## Coding Exercises (50 Minutes)
+
+### Easy
+
+1. Create a structure for **Student** containing:
+
+   * Roll Number
+   * Name
+   * Marks
+
+2. Input and display one student's information.
+
+3. Create a structure for **Book** with:
+
+   * Book ID
+   * Title
+   * Price
+
+### Medium
+
+4. Input details of **5 students** and display all records.
+
+5. Find the student with the highest marks.
+
+6. Calculate the average marks of all students.
+
+### Challenge
+
+7. Create an **Employee** structure with:
+
+   * Employee ID
+   * Name
+   * Salary
+
+Display employees whose salary is greater than ₹50,000.
+
+8. Search for a student by roll number.
+
+---
+
+## Debugging Challenge (20 Minutes)
+
+Find and fix the errors.
+
+```c
+#include <stdio.h>
+
+struct Student
+{
+    int roll;
+    char name[20];
+};
+
+int main()
+{
+    struct Student s;
+
+    scanf("%d", s.roll);
+
+    printf("%d", s.roll);
+
+    return 0;
+}
+```
+
+### Questions
+
+1. Why is `scanf("%d", s.roll);` incorrect?
+2. How should it be written?
+3. Why is `&` required here?
+
+---
+
+# Session 2 – Aptitude (40 Minutes)
+
+## Topic
+
+# Number System – Advanced
+
+### Learn (15 Minutes)
+
+Study:
+
+* Prime numbers
+* Composite numbers
+* Co-prime numbers
+* Remainders
+* Divisibility shortcuts
+* Last digit patterns
+
+---
+
+### Practice (25 Minutes)
+
+1. Find the remainder when **4567** is divided by **9**.
+2. Is **391** a prime number?
+3. Find the last digit of **7⁵**.
+4. Find the HCF of **96 and 144**.
+5. Find the LCM of **18, 24, and 30**.
+
+---
+
+# Session 3 – Logical Reasoning (30 Minutes)
+
+## Topic
+
+# Advanced Number Series
+
+Find the next number.
+
+1.
+
+```text
+2 5 10 17 26 ?
+```
+
+2.
+
+```text
+1 8 27 64 125 ?
+```
+
+3.
+
+```text
+4 9 16 25 36 ?
+```
+
+4.
+
+```text
+3 7 15 31 63 ?
+```
+
+5.
+
+```text
+2 3 5 8 12 17 ?
+```
+
+---
+
+# Revision (15 Minutes)
+
+Without looking at notes, explain:
+
+* What is a structure?
+* Why use structures instead of separate variables?
+* Difference between an array and a structure.
+* Difference between `.` (dot) and `->` (arrow) operators.
+
+---
+
+# Homework
+
+## C Programming
+
+### Mini Project
+
+### Student Record System (Structures)
+
+Features:
+
+* Add student
+* Display all students
+* Search by roll number
+* Find highest marks
+* Calculate average marks
+
+Use:
+
+* Arrays of structures
+* Functions
+
+---
+
+### Challenge
+
+Add these features:
+
+* Sort students by marks (highest to lowest).
+* Sort students alphabetically by name.
+
+---
+
+## Aptitude
+
+Solve **10 Advanced Number System** questions.
+
+---
+
+## Reasoning
+
+Solve **10 Advanced Number Series** questions.
+
+---
+
