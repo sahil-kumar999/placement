@@ -1,0 +1,312 @@
+Excellent! You're making steady progress through **Week 3**. Today you'll learn **Nested Structures** and **Structures with Functions**, which are essential for writing organized, modular C programs. These concepts are frequently used in projects and technical interviews.
+
+# STEP Preparation – Week 3, Day 2
+
+**Total Study Time:** **2.5–3 Hours**
+
+---
+
+# Session 1 – C Programming (100 Minutes)
+
+## Topic
+
+# Nested Structures & Structures with Functions
+
+## Learn (35 Minutes)
+
+### 1. Nested Structures
+
+A structure can contain another structure.
+
+Example:
+
+```c
+#include <stdio.h>
+
+struct Date
+{
+    int day;
+    int month;
+    int year;
+};
+
+struct Student
+{
+    int rollNo;
+    char name[50];
+    struct Date dob;
+};
+
+int main()
+{
+    struct Student s;
+
+    s.rollNo = 101;
+    s.dob.day = 15;
+    s.dob.month = 8;
+    s.dob.year = 2006;
+
+    printf("DOB: %02d/%02d/%d", s.dob.day, s.dob.month, s.dob.year);
+
+    return 0;
+}
+```
+
+---
+
+### 2. Passing Structures to Functions
+
+Example:
+
+```c
+#include <stdio.h>
+
+struct Student
+{
+    int roll;
+    float marks;
+};
+
+void display(struct Student s)
+{
+    printf("Roll: %d\n", s.roll);
+    printf("Marks: %.2f\n", s.marks);
+}
+
+int main()
+{
+    struct Student s = {101, 88.5};
+
+    display(s);
+
+    return 0;
+}
+```
+
+---
+
+### 3. Returning a Structure from a Function
+
+Example:
+
+```c
+#include <stdio.h>
+
+struct Student
+{
+    int roll;
+};
+
+struct Student createStudent()
+{
+    struct Student s;
+    s.roll = 101;
+    return s;
+}
+
+int main()
+{
+    struct Student s = createStudent();
+    printf("%d", s.roll);
+
+    return 0;
+}
+```
+
+---
+
+## Coding Exercises (50 Minutes)
+
+### Easy
+
+1. Create a `Date` structure and display a date.
+2. Create a `Student` structure containing a nested `Date` structure.
+3. Write a function to display student details.
+
+### Medium
+
+4. Write a function to input a student's details.
+5. Pass an array of structures to a function and display all records.
+6. Find the student with the highest marks using a function.
+
+### Challenge
+
+7. Create a `LibraryBook` structure containing:
+
+   * Book ID
+   * Title
+   * Author
+   * Published Date (nested structure)
+
+8. Create functions to:
+
+   * Add books
+   * Display books
+   * Search by Book ID
+
+---
+
+## Debugging Challenge (15 Minutes)
+
+Find and fix the errors.
+
+```c
+#include <stdio.h>
+
+struct Student
+{
+    int roll;
+};
+
+void display(struct Student *s)
+{
+    printf("%d", s.roll);
+}
+
+int main()
+{
+    struct Student st = {101};
+
+    display(&st);
+
+    return 0;
+}
+```
+
+### Questions
+
+1. Why is `s.roll` incorrect?
+2. Which operator should be used?
+3. Rewrite the corrected function.
+
+---
+
+# Session 2 – Aptitude (40 Minutes)
+
+## Topic
+
+# Simplification & Approximation
+
+## Learn (15 Minutes)
+
+Remember the order of operations (**BODMAS**):
+
+1. Brackets
+2. Orders (powers/roots)
+3. Division
+4. Multiplication
+5. Addition
+6. Subtraction
+
+### Approximation Tips
+
+* Round numbers only when instructed or when estimating.
+* Perform multiplication/division before addition/subtraction.
+
+---
+
+## Practice (25 Minutes)
+
+1. `(24 + 16) ÷ 8 × 5`
+2. `18 × 12 − 96 ÷ 8`
+3. `125 × 19` (use a quick mental method if possible)
+4. Approximate: `498 × 21`
+5. Approximate: `999 ÷ 49`
+
+---
+
+# Session 3 – Logical Reasoning (30 Minutes)
+
+## Topic
+
+# Alphabet & Mixed Series (Advanced)
+
+Find the next term.
+
+1.
+
+```text
+A C F J O ?
+```
+
+2.
+
+```text
+Z X U Q L ?
+```
+
+3.
+
+```text
+A 2 C 4 E 6 G ?
+```
+
+4.
+
+```text
+B E H K ?
+```
+
+5.
+
+```text
+AZ BY CX DW ?
+```
+
+---
+
+# Revision (15 Minutes)
+
+Without looking at notes, explain:
+
+* What is a nested structure?
+* Why pass a structure to a function?
+* Difference between `.` and `->`.
+* When should a pointer to a structure be used?
+
+---
+
+# Homework
+
+## C Programming
+
+### Mini Project
+
+## Library Management System – Part 1
+
+Create a program that:
+
+* Stores details of **10 books**
+* Uses:
+
+  * Nested structures
+  * Functions
+* Features:
+
+  * Add a book
+  * Display all books
+  * Search by Book ID
+
+---
+
+### Challenge
+
+Add these features:
+
+* Search by title.
+* Display books published after a given year.
+
+---
+
+## Aptitude
+
+Solve **10 Simplification & Approximation** questions.
+
+---
+
+## Reasoning
+
+Solve **10 Alphabet & Mixed Series** questions.
+
+---
+
