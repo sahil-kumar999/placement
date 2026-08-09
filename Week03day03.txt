@@ -1,0 +1,558 @@
+# STEP Preparation — Week 3, Day 3
+
+Today is a **major C milestone**. We'll connect structures with pointers and introduce **dynamic memory allocation**. Don't rush this topic—understanding memory is more important than memorizing `malloc()` syntax.
+
+**Total time: 2.5–3 hours**
+
+---
+
+# 🟢 Session 1 — C Programming (100 minutes)
+
+## Topic 1: Structure Pointers
+
+### 1. Pointer to a Structure
+
+You already know:
+
+```c
+struct Student
+{
+    int roll;
+    float marks;
+};
+```
+
+Create a structure:
+
+```c
+struct Student s = {101, 85.5};
+```
+
+Create a pointer:
+
+```c
+struct Student *p = &s;
+```
+
+Access members using:
+
+```c
+(*p).roll
+(*p).marks
+```
+
+But there is a shorter and more commonly used syntax:
+
+```c
+p->roll
+p->marks
+```
+
+### Important
+
+```c
+s.roll       // normal structure variable
+p->roll      // pointer to structure
+```
+
+---
+
+## 2. Example
+
+```c
+#include <stdio.h>
+
+struct Student
+{
+    int roll;
+    float marks;
+};
+
+int main()
+{
+    struct Student s = {101, 85.5};
+
+    struct Student *p = &s;
+
+    printf("Roll: %d\n", p->roll);
+    printf("Marks: %.2f\n", p->marks);
+
+    return 0;
+}
+```
+
+### Understand this carefully
+
+```text
+s       → actual structure
+&s      → address of structure
+p       → stores address of structure
+p->roll → accesses roll through pointer
+```
+
+---
+
+# Topic 2: Dynamic Memory Allocation
+
+Normally:
+
+```c
+int arr[10];
+```
+
+The size is fixed.
+
+Dynamic memory allows you to request memory **during program execution**.
+
+The main functions are:
+
+| Function    | Purpose                                  |
+| ----------- | ---------------------------------------- |
+| `malloc()`  | Allocates memory                         |
+| `calloc()`  | Allocates and initializes memory to zero |
+| `realloc()` | Changes allocated memory size            |
+| `free()`    | Releases allocated memory                |
+
+Include:
+
+```c
+#include <stdlib.h>
+```
+
+---
+
+## 3. `malloc()`
+
+Example:
+
+```c
+int *p;
+
+p = malloc(5 * sizeof(int));
+```
+
+This requests memory for **5 integers**.
+
+Always check:
+
+```c
+if(p == NULL)
+{
+    printf("Memory allocation failed");
+    return 1;
+}
+```
+
+After using the memory:
+
+```c
+free(p);
+```
+
+---
+
+## 4. `calloc()`
+
+```c
+int *p;
+
+p = calloc(5, sizeof(int));
+```
+
+This allocates space for 5 integers and initializes the allocated memory to zero.
+
+---
+
+## 5. `realloc()`
+
+Suppose you initially allocate space for 5 integers:
+
+```c
+p = malloc(5 * sizeof(int));
+```
+
+Later you need 10:
+
+```c
+p = realloc(p, 10 * sizeof(int));
+```
+
+---
+
+## 6. `free()`
+
+When you're finished:
+
+```c
+free(p);
+p = NULL;
+```
+
+This prevents you from accidentally using the old pointer.
+
+---
+
+# Coding Practice — 50 minutes
+
+## Easy
+
+### Q1
+
+Create a structure pointer for a `Student` and print:
+
+* Roll number
+* Name
+* Marks
+
+---
+
+### Q2
+
+Use `malloc()` to dynamically allocate memory for **5 integers**.
+
+Input and display all 5 numbers.
+
+---
+
+### Q3
+
+Use `calloc()` to allocate an array of 5 integers and display its initial values.
+
+---
+
+## Medium
+
+### Q4
+
+Dynamically allocate an array of `n` integers.
+
+Input `n` from the user.
+
+Then find:
+
+* Sum
+* Average
+* Maximum
+* Minimum
+
+---
+
+### Q5
+
+Create a structure:
+
+```c
+struct Student
+{
+    int roll;
+    char name[50];
+    float marks;
+};
+```
+
+Dynamically allocate memory for **n students**.
+
+Input and display all students.
+
+---
+
+## 🔥 Challenge
+
+### Q6
+
+Create a dynamic student management program:
+
+```text
+1. Add students
+2. Display students
+3. Find highest marks
+4. Find average
+5. Exit
+```
+
+Use:
+
+* Structure
+* Structure pointer
+* `malloc()`
+* Functions
+
+---
+
+# 🐛 Debugging Challenge — 15 minutes
+
+Find the problems:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int *p;
+
+    p = malloc(5 * sizeof(int));
+
+    for(int i = 0; i <= 5; i++)
+    {
+        p[i] = i * 10;
+    }
+
+    printf("%d", p[5]);
+
+    return 0;
+}
+```
+
+Answer these:
+
+1. How many elements were allocated?
+2. What is wrong with `i <= 5`?
+3. What is wrong with `p[5]`?
+4. What important statement is missing at the end?
+
+---
+
+# 🟡 Session 2 — Aptitude (40 minutes)
+
+# Topic: Profit & Loss — Advanced
+
+## Learn
+
+### Profit
+
+```text
+Profit = SP − CP
+```
+
+### Loss
+
+```text
+Loss = CP − SP
+```
+
+### Profit Percentage
+
+```text
+Profit % = (Profit / CP) × 100
+```
+
+### Loss Percentage
+
+```text
+Loss % = (Loss / CP) × 100
+```
+
+Where:
+
+* CP = Cost Price
+* SP = Selling Price
+
+---
+
+## Practice
+
+### Q1
+
+An article costs ₹800 and is sold for ₹960.
+
+Find the profit percentage.
+
+### Q2
+
+An article is bought for ₹1,200 and sold at a loss of 10%.
+
+Find the selling price.
+
+### Q3
+
+A shopkeeper sells an article for ₹1,500 and makes a profit of 20%.
+
+Find the cost price.
+
+### Q4
+
+An article marked at ₹2,000 is sold at a 15% discount.
+
+Find the selling price.
+
+### Q5 🔥
+
+A shopkeeper buys an article for ₹1,000, marks it up by 30%, and gives a 10% discount.
+
+Find:
+
+1. Marked price
+2. Selling price
+3. Profit percentage
+
+---
+
+# 🔵 Session 3 — Logical Reasoning (30 minutes)
+
+# Topic: Ranking & Ordering
+
+Learn these concepts:
+
+* Rank from left
+* Rank from right
+* Total number of people
+* Position between two people
+
+### Important Formula
+
+If a person has:
+
+```text
+Rank from left = 8
+Rank from right = 12
+```
+
+Then:
+
+```text
+Total = 8 + 12 − 1
+      = 19
+```
+
+---
+
+## Practice
+
+### Q1
+
+Rahul is 7th from the left and 10th from the right.
+
+How many people are there?
+
+---
+
+### Q2
+
+Aman is 12th from the top in a class of 40 students.
+
+What is his rank from the bottom?
+
+---
+
+### Q3
+
+P is 8th from the left.
+
+Q is 12th from the right.
+
+There are 5 people between P and Q.
+
+Assuming P is to the left of Q, how many people are there in total?
+
+---
+
+### Q4
+
+In a race, Rahul finishes 5th.
+
+There are 18 participants.
+
+What is his rank from the last?
+
+---
+
+### Q5 🔥
+
+In a row of students, A is 10th from the left and B is 15th from the right.
+
+There are 8 students between A and B.
+
+If A is to the left of B, find the total number of students.
+
+---
+
+# 🔁 Revision — 15 minutes
+
+Without looking at your notes, explain these in your own words:
+
+1. What is a structure pointer?
+2. Difference between `.` and `->`.
+3. What does `malloc()` do?
+4. Difference between `malloc()` and `calloc()`.
+5. Why do we use `free()`?
+6. What happens if we access memory beyond the allocated size?
+
+---
+
+# 🏠 Homework
+
+## C — Main Assignment
+
+### Dynamic Student Management System
+
+Create a program that dynamically stores student records.
+
+Each student should have:
+
+```text
+Roll Number
+Name
+Marks
+```
+
+Features:
+
+```text
+===== STUDENT MANAGEMENT =====
+
+1. Add Students
+2. Display Students
+3. Search Student
+4. Highest Marks
+5. Average Marks
+6. Exit
+```
+
+### Requirements
+
+Use:
+
+* `struct`
+* Structure pointer
+* `malloc()`
+* Functions
+* Array-like dynamic memory
+* `free()`
+
+**Do not use global variables.**
+
+---
+
+## ⭐ Extra Challenge
+
+Implement:
+
+```text
+7. Add More Students
+```
+
+Use `realloc()` to increase the number of student records.
+
+This is optional, but highly recommended.
+
+---
+
+# Aptitude Homework
+
+Solve **10 Profit & Loss questions**.
+
+Focus on:
+
+* Profit %
+* Loss %
+* CP/SP
+* Discount
+* Marked price
+
+---
+
+# Reasoning Homework
+
+Solve **10 Ranking & Ordering questions**.
+
