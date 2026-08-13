@@ -1,4 +1,3 @@
-Excellent! You're making steady progress through **Week 3**. Today you'll learn **Nested Structures** and **Structures with Functions**, which are essential for writing organized, modular C programs. These concepts are frequently used in projects and technical interviews.
 
 # STEP Preparation – Week 3, Day 2
 
