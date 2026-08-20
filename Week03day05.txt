@@ -1,0 +1,682 @@
+# 🚀 STEP Preparation — Week 3, Day 5
+
+Today we continue toward your **high-level C project**, but we will **not jump into AI/Spring Boot yet**. First, you need strong programming fundamentals.
+
+**Total time: 2.5–3 hours**
+
+### Today's focus
+
+* **C:** CRUD operations + searching + sorting with structures
+* **Aptitude:** Average
+* **Reasoning:** Coding-Decoding
+* **Project:** Smart Student Management System — Part 2
+
+---
+
+# 🟢 Session 1 — C Programming (100 minutes)
+
+## Topic: Searching, Sorting & CRUD
+
+You've already learned structures, pointers, dynamic memory and files.
+
+Today we start building the **core of a real application**.
+
+---
+
+## 1. What is CRUD?
+
+CRUD means:
+
+| Operation | Meaning |
+| --------- | ------- |
+| C         | Create  |
+| R         | Read    |
+| U         | Update  |
+| D         | Delete  |
+
+For our Student Management System:
+
+```text
+Create → Add student
+Read   → Display students
+Update → Modify student
+Delete → Remove student
+```
+
+These four operations are fundamental to almost every database application.
+
+---
+
+# 2. Create — Add Student
+
+Suppose:
+
+```c
+struct Student
+{
+    int id;
+    char name[50];
+    float marks;
+};
+```
+
+A function could look conceptually like:
+
+```c
+void addStudent(struct Student students[], int *count)
+{
+    // input student
+    // increase count
+}
+```
+
+Notice:
+
+```c
+int *count
+```
+
+Why?
+
+Because the function needs to modify the original `count`.
+
+---
+
+# 3. Read — Display Students
+
+Create:
+
+```c
+void displayStudents(struct Student students[], int count)
+```
+
+Print:
+
+```text
+ID     Name             Marks
+101    Rahul            82.5
+102    Aman             91.0
+103    Priya            76.5
+```
+
+---
+
+# 4. Search
+
+Start with **Linear Search**.
+
+Example:
+
+```c
+int searchStudent(struct Student students[],
+                  int count,
+                  int id)
+{
+    for(int i = 0; i < count; i++)
+    {
+        if(students[i].id == id)
+        {
+            return i;
+        }
+    }
+
+    return -1;
+}
+```
+
+If found:
+
+```text
+Index = 2
+```
+
+If not:
+
+```text
+-1
+```
+
+### Important
+
+Understand **why we return the index**, rather than just printing the student.
+
+Returning the index allows another function to:
+
+* update
+* delete
+* display
+* modify
+
+that student.
+
+---
+
+# 5. Update
+
+Suppose the user searches for ID `102`.
+
+Then:
+
+```text
+Student found.
+
+Enter new marks:
+95
+```
+
+Modify:
+
+```c
+students[index].marks = 95;
+```
+
+---
+
+# 6. Delete
+
+Suppose:
+
+```text
+101
+102
+103
+104
+```
+
+Delete `102`.
+
+Move:
+
+```text
+103 → 102's position
+104 → 103's position
+```
+
+Then decrease:
+
+```c
+count--;
+```
+
+This is an important array concept.
+
+---
+
+# 7. Sorting
+
+Today implement **Bubble Sort**.
+
+Example:
+
+```text
+80 50 90 60
+```
+
+After sorting:
+
+```text
+50 60 80 90
+```
+
+Basic logic:
+
+```c
+for(int i = 0; i < count - 1; i++)
+{
+    for(int j = 0; j < count - i - 1; j++)
+    {
+        if(students[j].marks > students[j + 1].marks)
+        {
+            // swap
+        }
+    }
+}
+```
+
+Don't memorize this.
+
+Understand **why the largest element moves toward the end after each pass**.
+
+---
+
+# 💻 Coding Exercises
+
+## Easy — 15 min
+
+### Q1
+
+Create a `Student` structure:
+
+```text
+id
+name
+marks
+```
+
+Input 5 students and display them.
+
+---
+
+## Medium — 20 min
+
+### Q2
+
+Write:
+
+```c
+int searchStudent(...)
+```
+
+It should return the index of a student based on ID.
+
+---
+
+### Q3
+
+Write:
+
+```c
+void updateStudent(...)
+```
+
+Search using ID and update the marks.
+
+---
+
+## Medium+ — 20 min
+
+### Q4
+
+Implement delete student.
+
+Example:
+
+```text
+Before:
+
+101
+102
+103
+104
+
+Delete 102
+
+After:
+
+101
+103
+104
+```
+
+---
+
+## 🔥 Challenge — 25 min
+
+Implement:
+
+```text
+1. Add Student
+2. Display Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Sort by Marks
+7. Exit
+```
+
+Use **functions**.
+
+Do not put everything inside `main()`.
+
+---
+
+# 🐛 Debugging Challenge — 10 min
+
+Find the bug:
+
+```c
+void deleteStudent(struct Student students[],
+                   int *count,
+                   int index)
+{
+    for(int i = index; i < *count; i++)
+    {
+        students[i] = students[i + 1];
+    }
+
+    (*count)--;
+}
+```
+
+### Questions
+
+1. What is wrong with the loop condition?
+2. Which index can become invalid?
+3. What should the correct condition be?
+
+---
+
+# 🟡 Session 2 — Aptitude (40 minutes)
+
+# Topic: Average
+
+## Basic Formula
+
+```text
+Average = Sum of observations / Number of observations
+```
+
+### Example
+
+Numbers:
+
+```text
+10, 20, 30
+```
+
+Average:
+
+```text
+60 / 3 = 20
+```
+
+---
+
+## Important Shortcut
+
+If the average of 5 numbers is 20:
+
+```text
+Total = 5 × 20
+      = 100
+```
+
+---
+
+# Practice
+
+### Q1
+
+Find the average of:
+
+```text
+10, 20, 30, 40, 50
+```
+
+### Q2
+
+The average of 6 numbers is 25.
+
+Find their total.
+
+### Q3
+
+The average age of 5 students is 18.
+
+A new student aged 24 joins.
+
+Find the new average.
+
+### Q4
+
+The average of 8 numbers is 15.
+
+One number, 22, is removed.
+
+Find the new average.
+
+### Q5 🔥
+
+The average marks of 20 students is 65.
+
+The average marks of the first 12 students is 70.
+
+Find the average marks of the remaining 8 students.
+
+---
+
+# 🔵 Session 3 — Logical Reasoning (30 minutes)
+
+# Topic: Coding-Decoding
+
+Understand the rule first.
+
+### Example
+
+If:
+
+```text
+CAT → DBU
+```
+
+Each letter moves +1:
+
+```text
+C → D
+A → B
+T → U
+```
+
+Therefore:
+
+```text
+DOG → EPH
+```
+
+---
+
+# Practice
+
+### Q1
+
+If:
+
+```text
+CAT → DBU
+```
+
+Then:
+
+```text
+DOG → ?
+```
+
+---
+
+### Q2
+
+If:
+
+```text
+BAT → YZG
+```
+
+What rule is being used?
+
+---
+
+### Q3
+
+If:
+
+```text
+APPLE → BQQMF
+```
+
+Encode:
+
+```text
+MANGO
+```
+
+---
+
+### Q4
+
+If:
+
+```text
+CODE → DPEF
+```
+
+Encode:
+
+```text
+JAVA
+```
+
+---
+
+### Q5 🔥
+
+If:
+
+```text
+BOOK → 2-15-15-11
+```
+
+Encode:
+
+```text
+CODE
+```
+
+Use:
+
+```text
+A = 1
+B = 2
+...
+Z = 26
+```
+
+---
+
+# 🔁 Revision — 15 minutes
+
+Without looking at your notes, explain:
+
+### C
+
+1. What does CRUD mean?
+2. Why does `searchStudent()` return an index?
+3. How does linear search work?
+4. How does deletion work in an array?
+5. How does Bubble Sort work?
+6. Why do we use `int *count`?
+
+### Aptitude
+
+7. How can you find total when average is known?
+
+### Reasoning
+
+8. How do you identify a coding-decoding pattern?
+
+---
+
+# 🏗️ Project Work
+
+## Smart Student Management System — Part 2
+
+Upgrade your previous project.
+
+Your menu should now be:
+
+```text
+========================================
+       SMART STUDENT MANAGEMENT
+========================================
+
+1. Add Student
+2. Display Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Sort by Marks
+7. Find Topper
+8. Calculate Average
+9. Exit
+```
+
+### Requirements
+
+Use:
+
+```text
+✓ Structures
+✓ Functions
+✓ Arrays
+✓ Pointers
+✓ Searching
+✓ Sorting
+✓ Dynamic memory
+```
+
+**Do not add AI yet.**
+
+The goal is to first make the underlying software reliable.
+
+---
+
+# ⭐ Project Challenge
+
+Add:
+
+### Student Performance Report
+
+For every student:
+
+```text
+================================
+Student Performance Report
+================================
+
+ID: 101
+Name: Rahul
+Marks: 87.5
+Grade: A
+
+Performance: Excellent
+```
+
+Create a function:
+
+```c
+char calculateGrade(float marks);
+```
+
+For example:
+
+```text
+90+ → A+
+80–89 → A
+70–79 → B
+60–69 → C
+50–59 → D
+<50 → F
+```
+
+---
+
+# 🏠 Homework
+
+### C
+
+Finish the **Smart Student Management System – Part 2**.
+
+### Aptitude
+
+Solve **10 Average questions**.
+
+Target:
+
+**≤ 2 minutes/question**
+
+### Reasoning
+
+Solve **10 Coding-Decoding questions**.
+
+For each one, write the **rule** you used.
+
+---
