@@ -1,0 +1,614 @@
+# 🚀 STEP Preparation — Week 3, Day 6
+
+Today we move your **Smart Student Management System** toward a more professional application.
+
+The main focus is **input validation + file persistence + better project structure**.
+
+**Total time: 2.5–3 hours**
+
+---
+
+# 🟢 Session 1 — C Programming — 100 min
+
+## Topic: Input Validation + File Handling with Structures
+
+You've already learned:
+
+* Structures
+* Structure pointers
+* Dynamic memory
+* Functions
+* Searching
+* Sorting
+* CRUD
+
+Today we connect them.
+
+---
+
+## Part 1 — Input Validation
+
+A good program shouldn't blindly accept everything.
+
+For example:
+
+```text
+Enter marks: 150
+```
+
+❌ Invalid.
+
+Your program should ask again.
+
+### Example
+
+```c
+do
+{
+    printf("Enter marks (0-100): ");
+    scanf("%f", &marks);
+
+    if(marks < 0 || marks > 100)
+    {
+        printf("Invalid marks!\n");
+    }
+
+} while(marks < 0 || marks > 100);
+```
+
+---
+
+## Practice 1
+
+Write validation for:
+
+### Student ID
+
+```text
+ID must be greater than 0
+```
+
+### Age
+
+```text
+Age must be between 10 and 100
+```
+
+### Marks
+
+```text
+Marks must be between 0 and 100
+```
+
+---
+
+# Part 2 — Duplicate ID Checking
+
+Suppose:
+
+```text
+Student 101 already exists.
+```
+
+The program shouldn't allow another student with ID `101`.
+
+Create:
+
+```c
+int idExists(struct Student students[], int count, int id);
+```
+
+Return:
+
+```text
+1 → ID exists
+0 → ID doesn't exist
+```
+
+Example:
+
+```c
+if(idExists(students, count, id))
+{
+    printf("ID already exists!\n");
+}
+```
+
+This is a good example of separating **validation logic** from the rest of your program.
+
+---
+
+# Part 3 — Saving Data to a File
+
+Your program currently loses all students when it closes.
+
+Let's fix that.
+
+Use:
+
+```c
+FILE *fp;
+
+fp = fopen("students.dat", "wb");
+```
+
+`"wb"` means:
+
+* `w` → write
+* `b` → binary
+
+---
+
+## Writing a Structure
+
+```c
+fwrite(&student,
+       sizeof(struct Student),
+       1,
+       fp);
+```
+
+For multiple students:
+
+```c
+fwrite(students,
+       sizeof(struct Student),
+       count,
+       fp);
+```
+
+Then:
+
+```c
+fclose(fp);
+```
+
+---
+
+# Part 4 — Loading Data
+
+Open:
+
+```c
+fp = fopen("students.dat", "rb");
+```
+
+Then:
+
+```c
+count = fread(students,
+              sizeof(struct Student),
+              capacity,
+              fp);
+```
+
+Now your program can restore the previous data.
+
+---
+
+# ⚠️ Important Concept
+
+Understand the difference:
+
+```text
+students
+```
+
+means the address of the first structure.
+
+```text
+&students
+```
+
+is something different.
+
+For arrays, you need to understand what expression you're passing to `fwrite()` and why.
+
+Don't memorize it.
+
+---
+
+# 💻 Coding Exercises
+
+## Q1 — Easy
+
+Write a program that:
+
+1. Creates a structure `Student`.
+2. Takes one student's information.
+3. Saves it to `student.dat`.
+4. Reads it back.
+5. Displays it.
+
+---
+
+## Q2 — Medium
+
+Write:
+
+```c
+void saveStudents(...)
+```
+
+The function should save all students.
+
+---
+
+## Q3 — Medium
+
+Write:
+
+```c
+int loadStudents(...)
+```
+
+It should load students from the file and return the number loaded.
+
+---
+
+## Q4 — Challenge
+
+Modify your Student Management System so that:
+
+```text
+Program starts
+      ↓
+Load students.dat
+      ↓
+Show menu
+      ↓
+User performs operations
+      ↓
+Save changes
+      ↓
+Exit
+```
+
+---
+
+# 🐛 Debugging Challenge
+
+Find the problems:
+
+```c
+FILE *fp;
+
+fp = fopen("students.dat", "rb");
+
+if(fp == NULL)
+{
+    printf("File error");
+}
+
+fread(&students,
+      sizeof(struct Student),
+      count,
+      fp);
+
+fclose(fp);
+```
+
+### Answer:
+
+1. What happens if `fp == NULL`?
+2. Why shouldn't `fread()` execute after a failed `fopen()`?
+3. Is `&students` necessarily correct here?
+4. Where should the program return/exit?
+
+---
+
+# 🟡 Session 2 — Aptitude — 40 min
+
+# Topic: Time & Work
+
+This is a high-value placement aptitude topic.
+
+## Basic Concept
+
+If A completes a job in 10 days:
+
+```text
+A's 1-day work = 1/10
+```
+
+If B completes it in 20 days:
+
+```text
+B's 1-day work = 1/20
+```
+
+Together:
+
+```text
+1/10 + 1/20
+= 3/20
+```
+
+Therefore:
+
+```text
+Time = 20/3 days
+```
+
+---
+
+## Practice
+
+### Q1
+
+A can complete a job in 10 days.
+
+How much work does A complete in one day?
+
+---
+
+### Q2
+
+A can complete a job in 12 days and B in 18 days.
+
+How long will they take together?
+
+---
+
+### Q3
+
+A completes a job in 15 days.
+
+B completes it in 30 days.
+
+How long together?
+
+---
+
+### Q4
+
+A can complete a job in 20 days.
+
+A works alone for 5 days.
+
+What fraction of the work remains?
+
+---
+
+### Q5 🔥
+
+A can complete a job in 12 days.
+
+B can complete it in 18 days.
+
+They work together for 4 days.
+
+What fraction of the work remains?
+
+---
+
+# 🔵 Session 3 — Logical Reasoning — 30 min
+
+# Topic: Blood Relations
+
+Learn the relationship vocabulary:
+
+```text
+Father's father → Grandfather
+Mother's mother → Grandmother
+Father's brother → Uncle
+Mother's brother → Uncle
+Brother's son → Nephew
+Sister's daughter → Niece
+```
+
+The key is to **draw a small family tree** instead of trying to remember everything mentally.
+
+---
+
+## Practice
+
+### Q1
+
+A is the father of B.
+
+B is the sister of C.
+
+How is A related to C?
+
+---
+
+### Q2
+
+P is the mother of Q.
+
+Q is the brother of R.
+
+How is P related to R?
+
+---
+
+### Q3
+
+A is the brother of B.
+
+B is the mother of C.
+
+How is A related to C?
+
+---
+
+### Q4
+
+X is the father of Y.
+
+Y is the mother of Z.
+
+How is X related to Z?
+
+---
+
+### Q5 🔥
+
+A is the brother of B.
+
+B is the sister of C.
+
+C is the father of D.
+
+How is A related to D?
+
+Draw the relationship before answering.
+
+---
+
+# 🔁 Revision — 15 min
+
+Without looking at notes, explain:
+
+### C
+
+1. Why do we validate input?
+2. Why should Student IDs be unique?
+3. Difference between `"rb"` and `"wb"`.
+4. What does `fwrite()` do?
+5. What does `fread()` do?
+6. Why should we check `fp == NULL`?
+
+### Aptitude
+
+7. What is "one day's work"?
+
+### Reasoning
+
+8. How do you solve blood-relation problems systematically?
+
+---
+
+# 🏗️ Major Project Upgrade
+
+## Smart Student Management System — Part 3
+
+Your menu should now become:
+
+```text
+========================================
+       SMART STUDENT MANAGEMENT
+========================================
+
+1. Add Student
+2. Display Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Sort by Marks
+7. Find Topper
+8. Calculate Average
+9. Save Data
+10. Load Data
+11. Exit
+```
+
+Add:
+
+### Validation
+
+```text
+✓ ID > 0
+✓ No duplicate ID
+✓ Age validation
+✓ Marks 0–100
+```
+
+### Persistence
+
+```text
+students.dat
+```
+
+The data should survive after closing the program.
+
+---
+
+# ⭐ Professional Challenge
+
+Create these separate functions:
+
+```c
+addStudent()
+displayStudents()
+searchStudent()
+updateStudent()
+deleteStudent()
+sortStudents()
+findTopper()
+calculateAverage()
+idExists()
+saveStudents()
+loadStudents()
+```
+
+Your `main()` should primarily handle:
+
+```text
+Initialization
+     ↓
+Load data
+     ↓
+Menu
+     ↓
+Function calls
+     ↓
+Exit
+```
+
+**Do not put all the logic inside `main()`.**
+
+---
+
+# 🏠 Homework
+
+### C
+
+Finish **Smart Student Management System — Part 3**.
+
+Your program should:
+
+* [ ] Add students
+* [ ] Display students
+* [ ] Search
+* [ ] Update
+* [ ] Delete
+* [ ] Sort
+* [ ] Calculate average
+* [ ] Find topper
+* [ ] Validate input
+* [ ] Prevent duplicate IDs
+* [ ] Save to file
+* [ ] Load from file
+
+### Aptitude
+
+Solve **10 Time & Work** questions.
+
+### Reasoning
+
+Solve **10 Blood Relation** questions.
+
+---
+
+# 🎯 Day 6 Completion Checklist
+
+Before starting Day 7, make sure you can:
+
+* [ ] Explain `fwrite()`
+* [ ] Explain `fread()`
+* [ ] Handle `NULL` file pointers
+* [ ] Validate user input
+* [ ] Prevent duplicate records
+* [ ] Build CRUD operations
+* [ ] Persist data using files
+* [ ] Solve basic Time & Work
+* [ ] Draw family trees for reasoning problems
+
+### Target
+
+**Previous:** 75/100
+**Day 6:** **78/100**
+
+---
