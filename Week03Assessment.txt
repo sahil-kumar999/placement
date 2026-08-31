@@ -1,0 +1,456 @@
+# 🧪 STEP Program — Week 3 Assessment
+
+Great. This is your **Week 3 final assessment**. It tests whether you actually understand the concepts rather than just completing the exercises.
+
+**Time limit:** 90 minutes
+**Total:** **100 marks**
+
+### Rules
+
+* 🚫 Don't use notes or Google.
+* 🚫 Don't copy code.
+* ✅ For coding questions, write complete programs.
+* ✅ Show calculations for aptitude.
+* ✅ For reasoning, write the logic/reasoning where possible.
+
+---
+
+# 🟢 Section A — C Programming
+
+## 50 Marks
+
+### Part A — Fundamentals & Theory
+
+**10 marks**
+
+### Q1. — 2 marks
+
+What is a **structure** in C? Why would you use a structure instead of separate variables?
+
+### Q2. — 2 marks
+
+What is the difference between:
+
+```c
+student.marks
+```
+
+and
+
+```c
+ptr->marks
+```
+
+### Q3. — 2 marks
+
+Explain the difference between:
+
+```c
+malloc()
+calloc()
+realloc()
+free()
+```
+
+### Q4. — 2 marks
+
+What is CRUD? Give one example of each operation in a Student Management System.
+
+### Q5. — 2 marks
+
+Why should we check:
+
+```c
+if(ptr == NULL)
+```
+
+after dynamic memory allocation?
+
+---
+
+# Part B — Predict the Output
+
+**10 marks**
+
+### Q6. — 2 marks
+
+```c
+#include <stdio.h>
+
+struct Student
+{
+    int roll;
+    float marks;
+};
+
+int main()
+{
+    struct Student s = {101, 85.5};
+
+    struct Student *p = &s;
+
+    printf("%d %.1f", p->roll, p->marks);
+
+    return 0;
+}
+```
+
+What is the output?
+
+---
+
+### Q7. — 2 marks
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int a[] = {10, 20, 30, 40};
+
+    int *p = a;
+
+    printf("%d %d", *p, *(p + 2));
+
+    return 0;
+}
+```
+
+What is the output?
+
+---
+
+### Q8. — 2 marks
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int x = 10;
+    int *p = &x;
+
+    *p = 25;
+
+    printf("%d", x);
+
+    return 0;
+}
+```
+
+What is the output?
+
+---
+
+### Q9. — 2 marks
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int a[] = {5, 10, 15, 20};
+
+    for(int i = 0; i < 4; i++)
+    {
+        printf("%d ", *(a + i));
+    }
+
+    return 0;
+}
+```
+
+What is the output?
+
+---
+
+### Q10. — 2 marks
+
+What happens conceptually here?
+
+```c
+int *p = malloc(5 * sizeof(int));
+
+free(p);
+
+p = NULL;
+```
+
+Why is `p = NULL` useful?
+
+---
+
+# Part C — Coding
+
+**30 marks**
+
+### Q11. — 5 marks
+
+Write a C program using a structure:
+
+```text
+Student
+- ID
+- Name
+- Marks
+```
+
+Input **5 students** and display the student with the highest marks.
+
+---
+
+### Q12. — 5 marks
+
+Write a function:
+
+```c
+int searchStudent(struct Student students[],
+                  int count,
+                  int id);
+```
+
+It should return the student's index if found and `-1` otherwise.
+
+---
+
+### Q13. — 5 marks
+
+Write a C program using `malloc()` to:
+
+1. Ask the user for `n`.
+2. Dynamically allocate `n` integers.
+3. Input the numbers.
+4. Find their sum and average.
+5. Free the allocated memory.
+
+---
+
+### Q14. — 5 marks
+
+Write a function to sort an array of integers using **Bubble Sort** in ascending order.
+
+---
+
+### Q15. — 10 marks 🔥
+
+Build a **mini Student Management System**.
+
+It must contain:
+
+```text
+1. Add Student
+2. Display Students
+3. Search Student
+4. Update Marks
+5. Delete Student
+6. Find Topper
+7. Exit
+```
+
+Use:
+
+* `struct`
+* Functions
+* Array of structures
+* Searching
+* At least one sorting operation
+
+**Bonus:** Use dynamic memory or file handling.
+
+---
+
+# 🟡 Section B — Aptitude
+
+## 25 Marks
+
+### Q16. — 3 marks
+
+The average of 6 numbers is 25.
+
+Five of the numbers have a total of 110.
+
+Find the sixth number.
+
+---
+
+### Q17. — 3 marks
+
+A:B = 3:5.
+
+If A + B = 64, find A and B.
+
+---
+
+### Q18. — 3 marks
+
+An article is bought for ₹800 and sold for ₹920.
+
+Find the profit percentage.
+
+---
+
+### Q19. — 3 marks
+
+A can complete a job in 12 days.
+
+B can complete it in 18 days.
+
+How many days will they take together?
+
+---
+
+### Q20. — 3 marks
+
+A die is rolled once.
+
+What is the probability of getting a number greater than 4?
+
+---
+
+### Q21. — 3 marks
+
+A car travels 240 km in 4 hours.
+
+It then travels another 120 km in 3 hours.
+
+Find the **average speed for the entire journey**.
+
+---
+
+### Q22. — 4 marks 🔥
+
+A product has a marked price of ₹2,500.
+
+The shopkeeper gives a **20% discount**.
+
+If the cost price is ₹1,600, find:
+
+1. Selling price
+2. Profit
+3. Profit percentage
+
+---
+
+### Q23. — 3 marks
+
+Find the remainder when:
+
+```text
+12345 ÷ 9
+```
+
+---
+
+# 🔵 Section C — Logical Reasoning
+
+## 25 Marks
+
+### Q24. — 3 marks
+
+Find the next number:
+
+```text
+2, 6, 12, 20, 30, ?
+```
+
+---
+
+### Q25. — 3 marks
+
+Find the next letter:
+
+```text
+A, C, F, J, O, ?
+```
+
+---
+
+### Q26. — 3 marks
+
+If:
+
+```text
+CAT → DBU
+```
+
+then:
+
+```text
+DOG → ?
+```
+
+---
+
+### Q27. — 3 marks
+
+Rahul is 8th from the left and 12th from the right.
+
+How many people are in the row?
+
+---
+
+### Q28. — 3 marks
+
+A is the brother of B.
+
+B is the mother of C.
+
+How is A related to C?
+
+---
+
+### Q29. — 3 marks
+
+Five people sit in a row:
+
+* A is at the extreme left.
+* E is at the extreme right.
+* B is immediately right of A.
+* D is immediately left of E.
+
+Who sits in the middle?
+
+---
+
+### Q30. — 4 marks 🔥
+
+Four people P, Q, R and S sit in a row.
+
+* P is not at either end.
+* Q is immediately to the left of R.
+* S is at the right end.
+
+Find the complete arrangement.
+
+---
+
+### Q31. — 3 marks
+
+```text
+Bird : Fly :: Fish : ?
+```
+
+---
+
+# 📊 Scoring
+
+| Section       |   Marks |
+| ------------- | ------: |
+| C Programming |      50 |
+| Aptitude      |      25 |
+| Reasoning     |      25 |
+| **Total**     | **100** |
+
+### Performance levels
+
+| Score    | Level                     |
+| -------- | ------------------------- |
+| 90–100   | 🟢 Excellent              |
+| 80–89    | 🟢 Strong                 |
+| 70–79    | 🟡 Good                   |
+| 60–69    | 🟠 Needs revision         |
+| Below 60 | 🔴 Fundamentals need work |
+
+For **STEP preparation**, I want you eventually reaching **80+ consistently**, not just once.
+
+---
