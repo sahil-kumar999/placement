@@ -1,0 +1,638 @@
+Absolutely. The screenshot changes our strategy significantly.
+
+Your **Thoughtworks Selection Test is next month**, and the test is **code-only**. So from now until the exam, we should temporarily stop treating this like a broad programming course and switch to **selection-test preparation**.
+
+From the syllabus in your screenshot, the tested areas are:
+
+* C Programming
+* Conditions
+* Loops
+* Strings
+* Arrays
+* Memory Allocation
+* Basic C Programs
+* 10th Standard Mathematics
+
+Since you've already completed the first 3 weeks, we'll now **reorganize your preparation around solving coding problems under time pressure** rather than studying theory.
+
+# 🎯 New Goal: Selection Test Preparation
+
+### Exam target
+
+**Next month — October 2026**
+
+### Main rule
+
+> **80–90% of our preparation will be writing, debugging, and solving code.**
+
+No long theory sessions.
+
+We'll learn a concept only when it's needed to solve a problem.
+
+---
+
+# 🔥 5-Week Selection Test Plan
+
+## Week 1 — C Core + Basic Programs
+
+### Conditions
+
+Practice:
+
+```text
+Even/Odd
+Positive/Negative
+Largest of 2/3
+Leap Year
+Grade
+Calculator
+Divisibility
+Voting eligibility
+Character type
+```
+
+### Loops
+
+```text
+1 → N
+N → 1
+Sum
+Product
+Even/Odd
+Multiplication table
+Factorial
+Count digits
+Sum of digits
+Reverse number
+Palindrome
+```
+
+### Basic programs
+
+```text
+Prime
+Armstrong
+Perfect number
+Strong number
+Fibonacci
+GCD
+LCM
+```
+
+**Goal:** Solve basic programs without looking at solutions.
+
+---
+
+# Week 2 — Arrays + Strings
+
+## Arrays
+
+```text
+Input/output
+Sum
+Average
+Maximum
+Minimum
+Search
+Count occurrences
+Reverse
+Copy
+Sort
+Second largest
+Duplicates
+Frequency
+Merge arrays
+```
+
+Then:
+
+```text
+2D Arrays
+Matrix addition
+Transpose
+Diagonal sum
+Matrix multiplication
+```
+
+## Strings
+
+Without depending heavily on library functions:
+
+```text
+Length
+Reverse
+Palindrome
+Count vowels
+Count consonants
+Count digits
+Count spaces
+Character frequency
+String comparison
+String copy
+Remove spaces
+Remove duplicate characters
+```
+
+---
+
+# Week 3 — Memory Allocation + Mixed Problems
+
+Focus on:
+
+```c
+malloc()
+calloc()
+realloc()
+free()
+```
+
+Then immediately apply them to coding problems.
+
+Examples:
+
+```text
+Dynamic array
+Dynamic string
+Dynamic student records
+Resize an array
+Find maximum dynamically
+```
+
+We'll also begin **mixed coding sets**:
+
+```text
+Condition + Loop
+Loop + Array
+Array + String
+String + Pointer
+Array + Dynamic Memory
+```
+
+---
+
+# Week 4 — 10th Mathematics Through Code
+
+Because your exam is code-only, we'll practice mathematics as **programming problems**, not textbook theory.
+
+### Topics
+
+```text
+Percentages
+Ratio
+Average
+Profit & Loss
+Simple Interest
+Compound Interest
+Time & Work
+Speed/Distance/Time
+LCM/GCD
+HCF
+Factors
+Multiples
+Divisibility
+Number system
+Basic algebra
+Geometry
+```
+
+For example:
+
+Instead of simply asking:
+
+> Find 20% of 500.
+
+We'll write:
+
+```c
+int number = 500;
+float percentage = 20;
+
+float result = (number * percentage) / 100;
+```
+
+Then gradually move toward problems where you must determine the algorithm yourself.
+
+---
+
+# Week 5 — 🔥 Selection Test Simulation
+
+This is the most important stage.
+
+We'll stop teaching new topics.
+
+Every day:
+
+```text
+Timed Coding Test
+        ↓
+Submit Code
+        ↓
+Evaluate
+        ↓
+Find Bugs
+        ↓
+Identify Weak Topic
+        ↓
+Targeted Practice
+```
+
+We'll practice questions combining multiple concepts.
+
+Example:
+
+> Read N numbers and print the second largest number without sorting.
+
+or:
+
+> Read a string and determine whether it is a palindrome while ignoring spaces.
+
+or:
+
+> Dynamically allocate an array and find the frequency of each element.
+
+---
+
+# 🧠 Your New Daily Structure
+
+For the next month, your normal **2–3 hour session** will look like this:
+
+### 🟢 20 min — Concept through examples
+
+Only the necessary concept.
+
+### 🔵 60 min — Coding
+
+4–6 problems.
+
+### 🟡 30 min — Mathematics coding
+
+3–5 problems.
+
+### 🔴 30 min — Timed challenge
+
+1–2 problems with a strict timer.
+
+### ⚫ 10 min — Debugging
+
+Take incorrect code and find the bug.
+
+---
+
+# 🚨 New Rule: No Copy-Paste Learning
+
+For every coding question, follow:
+
+```text
+1. Understand problem
+       ↓
+2. Write algorithm
+       ↓
+3. Write code
+       ↓
+4. Compile
+       ↓
+5. Test
+       ↓
+6. Debug
+```
+
+If your program doesn't work, **send me your code**.
+
+I'll help you identify the problem rather than immediately giving you the finished answer.
+
+---
+
+# 🧪 Selection-Test Difficulty Levels
+
+We'll progress like this:
+
+### Level 1 — Basic
+
+```text
+Even/Odd
+Sum
+Maximum
+Factorial
+Reverse
+Palindrome
+```
+
+### Level 2 — Intermediate
+
+```text
+Prime
+Armstrong
+Fibonacci
+GCD/LCM
+Frequency
+Second largest
+Array rotation
+String manipulation
+```
+
+### Level 3 — Selection Test
+
+```text
+Multiple conditions
+Nested loops
+Arrays + strings
+Pattern problems
+Frequency problems
+Number manipulation
+Dynamic memory
+Mathematical algorithms
+```
+
+### Level 4 — 🔥 Exam Simulation
+
+Completely unseen problems.
+
+No hints.
+
+Strict time limit.
+
+---
+
+# 📅 TODAY — Selection Test Day 1
+
+Since you've already studied the fundamentals, **we will not restart from zero**.
+
+Today is a **diagnostic coding day**.
+
+## ⏱️ Total: 2.5 hours
+
+---
+
+# 🟢 Session 1 — C Coding — 70 min
+
+Don't look up solutions.
+
+### Q1 — Easy
+
+Read an integer and print whether it is:
+
+```text
+Positive
+Negative
+Zero
+```
+
+---
+
+### Q2 — Easy
+
+Read three integers and print the largest.
+
+**Restriction:** Don't use an array.
+
+---
+
+### Q3 — Easy
+
+Print all even numbers from `1` to `N`.
+
+---
+
+### Q4 — Medium
+
+Read a number and calculate the sum of its digits.
+
+Example:
+
+```text
+Input: 5832
+
+Output: 18
+```
+
+---
+
+### Q5 — Medium
+
+Reverse a number.
+
+```text
+Input: 12345
+Output: 54321
+```
+
+---
+
+### Q6 — Medium
+
+Check whether a number is a palindrome.
+
+```text
+Input: 121
+Output: Palindrome
+```
+
+---
+
+### Q7 — 🔥 Challenge
+
+Check whether a number is an Armstrong number.
+
+Example:
+
+```text
+153
+```
+
+Because:
+
+```text
+1³ + 5³ + 3³ = 153
+```
+
+---
+
+# 🟡 Session 2 — Mathematics Coding — 40 min
+
+Write C programs for:
+
+### Q8
+
+Calculate percentage:
+
+```text
+Obtained marks
+Total marks
+```
+
+---
+
+### Q9
+
+Calculate simple interest:
+
+```text
+SI = (P × R × T) / 100
+```
+
+---
+
+### Q10
+
+Find GCD of two numbers.
+
+Example:
+
+```text
+Input:
+24 36
+
+Output:
+12
+```
+
+---
+
+### Q11
+
+Find LCM of two numbers.
+
+---
+
+### Q12 — 🔥
+
+Given a number `N`, determine how many factors it has.
+
+Example:
+
+```text
+Input: 12
+
+Output: 6
+```
+
+because:
+
+```text
+1, 2, 3, 4, 6, 12
+```
+
+---
+
+# 🔴 Session 3 — Timed Selection Challenge — 30 min
+
+Set a **30-minute timer**.
+
+Solve these without help.
+
+## Challenge 1
+
+Read `N` integers and print:
+
+```text
+Largest
+Smallest
+Sum
+Average
+```
+
+---
+
+## Challenge 2
+
+Read a number and print:
+
+```text
+Number of digits
+Sum of digits
+Reverse
+Palindrome / Not Palindrome
+```
+
+### Example
+
+```text
+Input:
+1221
+
+Output:
+Digits = 4
+Sum = 6
+Reverse = 1221
+Palindrome
+```
+
+---
+
+# 🐛 Final Debugging Challenge — 10 min
+
+Find the bug:
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    int sum = 0;
+
+    printf("Enter number: ");
+    scanf("%d", &n);
+
+    while(n > 0)
+    {
+        sum = sum + n % 10;
+        n = n / 10;
+    }
+
+    printf("Sum = %d", n);
+
+    return 0;
+}
+```
+
+### Question:
+
+The digit sum calculation looks correct.
+
+So **why is the final output wrong?**
+
+Fix it.
+
+---
+
+# 📊 Today's Diagnostic
+
+Don't worry about your score today.
+
+I'm going to use your results to determine whether you need:
+
+```text
+Basic C revision
+       ↓
+Intermediate coding
+       ↓
+Selection-level coding
+```
+
+or whether we can immediately increase the difficulty.
+
+### After finishing, send me:
+
+```text
+Q1:
+[code]
+
+Q2:
+[code]
+
+...
+
+Q12:
+[code]
+
+Challenge 1:
+[code]
+
+Challenge 2:
+[code]
+
+Debugging:
+[fixed code]
+```
+
